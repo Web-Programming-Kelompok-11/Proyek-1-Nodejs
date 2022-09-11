@@ -58,13 +58,13 @@ html, body {
     font-size: 2vw;
     text-align: center;
     padding: 0.5vw 1vw;
-  }
-  
-  .carousel-caption .btn-primary a {
+}
+
+.carousel-caption .btn-primary a {
     color: #fafafa;
-  }
+}
   
-  .carousel-caption .btn-primary:hover { 
+ .carousel-caption .btn-primary:hover { 
     background: #001c9b;
   }
 
@@ -95,7 +95,7 @@ html, body {
     background-color: #0275d8 ;
     color: #fafafa;
     margin-top: 5vw;
-    padding-top: 3vw;
+    padding-top: 1vw;
     padding-bottom: 3vw;
   }
 
@@ -106,7 +106,11 @@ html, body {
     margin-bottom: 1vw;
   }
 
+  footer p {
+    font-size: 1em;
+  }
+
   footer h5 {
-    margin-top: 2vw;
+    margin-top: 1vw;
     margin-bottom: -1vw;
   }

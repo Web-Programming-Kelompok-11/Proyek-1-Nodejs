@@ -20,8 +20,8 @@ html, body {
 }
 
 .navbar-brand {
-    font-size: 1.35em !important;
-    font-weight: 650;
+    font-size: 21px !important;
+    font-weight: 500;
 }
 
 .carousel-inner img {

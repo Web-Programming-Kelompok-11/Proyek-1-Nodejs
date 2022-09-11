@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    padding: .8rem 1rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.navlink {
+    font-size: 1.1em !important;
+}
+
+.navbar-brand {
+    font-size: 1.35em !important;
+    font-weight: 650;
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10vw);
+}
+
+.carousel-caption h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0.5vw 0.5vw 0.5vw #000;
+}
+
+.carousel-caption-h3 {
+    font-size: 2vw;
+    font-weight: 550;
+    text-shadow: 0.2vw 0.2vw #000;
+}
+
+.carousel-caption .btn-primary { 
+    background: #45B8AC;
+    border-color: #009B77;
+    height: 5vw;
+    width: 15vw;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  
+  .carousel-caption .btn-primary a {
+    color: #fafafa;
+  }
+  
+  .carousel-caption .btn-primary:hover { 
+    background: #009B77;
+  }
+
+  .display-4 {
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    margin: 0px auto;
+  }
+
+  .divider1 {
+    border-color: white;
+    width: 95%;
+    margin-top: 5vw;
+    margin-bottom: -2vw;
+  }
+
+  .welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: -0.5vw;
+  }
+
+  footer {
+    background-color: #0275d8 ;
+    color: #fafafa;
+    margin-top: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  hr.light {
+    border-top: 1px solid #fafafa;
+    width: 95%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+
+  footer h5 {
+    margin-top: 2vw;
+    margin-bottom: -1vw;
+  }

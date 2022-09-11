@@ -81,10 +81,18 @@ html, body {
     margin-bottom: -2vw;
   }
 
+  .divider2 {
+    border-color: white;
+    width: 95%;
+    margin-top: 2 vw;
+    margin-bottom: -2vw;
+  }
+
   .welcome hr {
     border-top: 2px solid #b4b4b4;
     width: 95%;
     margin-top: -0.5vw;
+    padding-bottom: 1vw;
   }
 
   .more-place {

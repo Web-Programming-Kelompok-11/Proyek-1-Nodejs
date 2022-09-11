@@ -86,6 +86,10 @@ html, body {
     margin-top: -0.5vw;
   }
 
+  .more-place {
+    color: rgb(160, 160, 160);
+  }
+
   footer {
     background-color: #0275d8 ;
     color: #fafafa;

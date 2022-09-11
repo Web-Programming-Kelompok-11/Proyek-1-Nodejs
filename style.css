@@ -50,8 +50,9 @@ html, body {
 }
 
 .carousel-caption .btn-primary { 
-    background: #45B8AC;
-    border-color: #009B77;
+    background: #0275d8;
+    border-color: #001c9b;
+    border-width: 0.15vw;
     height: 4.5vw;
     width: 15vw;
     font-size: 2vw;
@@ -64,7 +65,7 @@ html, body {
   }
   
   .carousel-caption .btn-primary:hover { 
-    background: #009B77;
+    background: #001c9b;
   }
 
   .display-4 {

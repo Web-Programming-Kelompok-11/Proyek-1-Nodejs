@@ -46,15 +46,17 @@ html, body {
     font-size: 2vw;
     font-weight: 550;
     text-shadow: 0.2vw 0.2vw #000;
+    padding-bottom: 0.75vw;
 }
 
 .carousel-caption .btn-primary { 
     background: #45B8AC;
     border-color: #009B77;
-    height: 5vw;
+    height: 4.5vw;
     width: 15vw;
     font-size: 2vw;
-    padding: 1vw;
+    text-align: center;
+    padding: 0.5vw 1vw;
   }
   
   .carousel-caption .btn-primary a {

@@ -1,6 +1,6 @@
 # Proyek-1
-Home page situs dengan tema: Tiket&nbsp&nbsp
-Kelompok 11&nbsp
-Jericho Sylvanus 535210067&nbsp
-Jonathan Suryadi 535210072&nbsp
-Eugene Vincent Arends 535210082&nbsp
+Home page situs dengan tema: Tiket<br /><br />
+Kelompok 11<br />
+Jericho Sylvanus 535210067<br />
+Jonathan Suryadi 535210072<br />
+Eugene Vincent Arends 535210082<br />

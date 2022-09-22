@@ -19,22 +19,60 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-3 order-2" id="sticky-sidebar">
-                    <div class="sticky-top">
-                        <div class="nav flex-column">
-                            <p>Sticky</p>
-                            <a href="#_" class="nav-link">Link</a>
-                            <button type="button" class="btn btn-primary btn-lg">Button</button>
-                        </div>
-                    </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i data-feather="log-in" style="color: #0275d8"></i>
+                    ShowFinder
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between align-items-center w-75" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto text-md-center text-left">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Other</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col" id="main">
-                    <h1>h1</h1>
-                    <p>Content</p>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <a class="nav-link ml-auto" href="#">About</a>
                 </div>
             </div>
-        </div>
+            </nav>
+
+            <!-- sticky sidebar -->
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-3 order-2" id="sticky-sidebar">
+                        <div class="sticky-top">
+                            <div class="nav flex-column">
+                                <p>Sticky</p>
+                                <a href="#_" class="nav-link">Link</a>
+                                <button type="button" class="btn btn-primary btn-lg">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="main">
+                        <h1>h1</h1>
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
     </body>
 </html>

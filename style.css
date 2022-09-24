@@ -9,6 +9,10 @@ html, body {
 
 .navbar {
     padding: .8rem 1rem;
+    /* shadows */
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 
 .navbar-nav li {

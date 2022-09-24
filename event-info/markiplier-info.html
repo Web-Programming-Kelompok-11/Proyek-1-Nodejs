@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Markiplier Show | ShowFinder</title>
+        <!-- TODO:style -->
         <link href="info-style.css" rel="stylesheet" type="text/css">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -51,25 +52,88 @@
             </div>
             </nav>
 
-            <div class="container">
+            <div class="container-fluid padding">
                 <div class="row py-3">
                     <!-- sticky sidebar -->
-                    <div class="col-3 order-2" id="sticky-sidebar">
+                    <!-- TODO: top and bottom padding -->
+                    <div class="col-4 order-2 mx-1" id="sticky-sidebar">
                         <div class="sticky-top">
                             <div class="nav flex-column">
-                                <p>Sticky</p>
-                                <a href="#_" class="nav-link">Link</a>
-                                <button type="button" class="btn btn-primary btn-lg">Button</button> 
+                                <h3 class="info-sidebar-title">Markiplier Show</h3>
+                                <p class="info-sub-text">By Markiplier</p>
+                                <p class="info-place-text">CITY</p>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Location</p>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Schedule</p>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text" id="price-text">PRICE</p>
+                                <h6 id="price-amount">$0.00</h6>
+                                <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button">Buy Tickets</button> 
                             </div>
                         </div>
                     </div>
                     <!-- main -->
                     <div class="col" id="main">
-                        <h1>Markiplier Show</h1>
-                        <p>Content</p>
-                    </div>
+                        <p id="info-type">Entertainment</p>
+                        <h1 class="display-4" id="info-title-text">Markiplier Show</h1>
+                        <!--image -->
+                        <img src="../img/poster-1.png" alt="Markiplier" class="img-fluid" id="info-poster-main-img">
+                        <hr class="divider-invisible">
+                        <!-- show desc. -->
+                        <h3 class="info-subheading-text">Description</h3>
+                        <p class="info-main-text">Placeholder...</p>
+                        <hr class="divider-main">
+                        <h3 class="info-subheading-text">Location</h3>
+                        <h6 class="info-place-text">Place</h6>
+                        <p class="info-sub-text">Placeholder...</p>
+                        <h3 class="info-subheading-text">Location Description</h3>
+                        <p class="info-sub-text">Placeholder...</p>
+                        <!-- TODO: Google maps integration? https://bootstrapious.com/p/google-maps-and-bootstrap-tutorial -->
+                        <!-- API key: AIzaSyDOhB4c8ScPcBAG6XuurGtG01IKCfmtalM -->
+                        <hr class="divider-main">
+                        <!-- schedules for show -->
+                        <h3 class="info-subheading-text">Schedules</h3>
+                        <div class="row">
+                            <div class="col" id="info-date">
+                                <h6 class="info-place-text">Placeholder...</h6>
+                                <p class="info-place-text">Placeholder...</p>
+                            </div>
+                            <div class="col" id="info-time">
+                                <h6 class="info-sub-text">Placeholder...</h6>
+                                <p class="info-sub-text">Placeholder...</p>
+                            </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- creator/artist/etc. -->
+                        <h3 class="info-subheading-text">Creator</h3>
+                        <div class="row">
+                            <div class="col" id="logo">
+                                <img src="../img/logo-1.png" alt="Placeholder..." class="img-fluid">
+                            </div>
+                            <div class="col" id="info-creator">
+                                <h4 class="info-subheading-text">Placeholder...</h6>
+                                <p class="info-sub-text">Placeholder...</p>
+                            </div>
+                        </div>
+                        <!-- TODO: add creator html or remove this button -->
+                        <hr class="divider-invisible">
+                        <button type="button" class="btn btn-primary btn-lg" id="to-creator-button">Do we need this?</button>
+                        <!-- disclaimer -->
+                        <div class="row" id="info-disclaimer">
+                            <div class="col" id="logo">
+                                <img src="../img/logo-1.png" alt="Placeholder img" class="img-fluid">
+                            </div>
+                            <div class="col" id="info-disclaimer-text">
+                                <p class="info-sub-text">Placeholder...</p>
+                            </div>
+                        </div>
+                        <hr class="divider-invisible">
+                    </div> 
                 </div>
             </div>
+
+            <!-- TODO: add footer or not? -->
 
             <!-- feathericons -->
             <script>

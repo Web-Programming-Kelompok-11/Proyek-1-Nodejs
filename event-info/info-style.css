@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    position: fixed;
+    padding: .8rem 1rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.navlink {
+    font-size: 1.1em !important;
+}
+
+.navbar-brand {
+    font-size: 21px !important;
+    font-weight: 500;
+}
+
+#sticky-sidebar {
+    padding-right: 8vw;
+}
+
+.info-sidebar-title {
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+}
+
+.flex-column {
+    padding-top: 10vw;
+    margin-right: 2vw;
+}
+
+#main {
+    padding-top: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#info-type {
+    font-size: 1em;
+    font-weight: 400;
+    color: royalblue;
+    padding-bottom: 0em;
+    padding-left: 3px; /* fix weird alignment issue */
+}
+
+#info-title-text {
+    padding-top: -4em;
+    padding-bottom: 0.5em;
+    margin-top: -0.4em;
+}
+
+#info-poster-main-img {
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    height: 80vw;
+    width: 50vw;
+}
+
+.info-subheading-text {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+}
+
+.info-place-text {
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+}
+
+.info-sub-text {
+    font-weight: 450;
+    color: grey;
+}
+
+#price-text {
+    font-weight: 200;
+    color: grey;
+    font-size: 15px;
+}
+
+#price-amount {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: crimson;
+    font-size: 25px;
+}
+
+.divider-invisible {
+    border-color: white;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: -2vw;
+}
+
+.divider-main {
+    width: 100%;
+}
+
+.divider-sidebar {
+    width: 29vw;
+}
+
+#to-creator-button {
+    padding-bottom: 1vw;
+}
+
+#info-disclaimer {
+    padding-top: 2vw;
+}
+
+/*mobile only*/
+@media only screen and (max-width: 768px) {
+    .flex-column {
+        padding-top: 15vw;
+    }
+}

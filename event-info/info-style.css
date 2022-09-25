@@ -42,7 +42,7 @@ html, body {
     margin-right: 2vw;
 }
 
-#main {
+#info-main {
     padding-top: 2vw;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -119,6 +119,21 @@ html, body {
 
 #info-disclaimer {
     padding-top: 2vw;
+}
+
+.tickets-title {
+    padding-top: 3vw;
+    padding-bottom: 1vw;
+}
+
+.tickets-batch {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.individual-tickets {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /*mobile only*/

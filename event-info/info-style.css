@@ -142,3 +142,14 @@ html, body {
         padding-top: 15vw;
     }
 }
+
+@media only screen and (max-width: 420px) {
+    .flex-column {
+        padding-top: 8vw;
+    }
+
+    #info-poster-main-img {
+        width: 100%;
+        height: 130vw;
+    }
+}

@@ -132,3 +132,37 @@ html, body {
     margin-top: 1vw;
     margin-bottom: -1vw;
   }
+
+  .about-heading {
+    background-color: rgb(245, 245, 245);
+    height: 250px;
+    width: 100%;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 12px 12px 12px #999;
+    box-shadow: 0 12px 6px -6px #999;
+  }
+
+  #display-about-logo {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 100px;
+    padding-top: 40px;
+  }
+
+  .about-main {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    
+  }
+
+  .about-team {
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 100px;
+    
+  }
+
+/*mobile*/
+@media only screen and (max-width: 575px) {
+
+}

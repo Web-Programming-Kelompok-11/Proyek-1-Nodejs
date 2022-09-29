@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse justify-content-between align-items-center w-75" id="navbarResponsive">
                     <ul class="navbar-nav mx-auto text-md-center text-left">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Music</a>
+                            <a class="nav-link" href="../category/music.html">Music</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sports</a>
@@ -47,7 +47,7 @@
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <a class="nav-link ml-auto" href="#">About</a>
+                    <a class="nav-link ml-auto" href="../about.html">About</a>
                 </div>
             </div>
             </nav>
@@ -62,17 +62,19 @@
                                 <h3 class="info-sidebar-title">Markiplier Show</h3>
                                 <p class="info-sub-text">By Markiplier</p>
                                 <p class="info-place-text">CITY</p>
-                                <p class="info-sub-text">Los Angeles, California</p>
+                                <span class="info-sub-text">Los Angeles, California</span>
                                 <hr class="divider-sidebar">
-                                <p class="info-main-text">Location</p>
-                                <p class="info-sub-text">San Jose Civic | 135 West San Carlos Street, San Jose, CA 95113</p>
+                                <span class="info-main-text">Location</span>
+                                <span class="info-sub-text">San Jose Civic | 135 West San Carlos Street, San Jose, CA 95113</span>
                                 <hr class="divider-sidebar">
                                 <p class="info-main-text">Schedule</p>
-                                <p class="info-sub-text">6.09.2069 - 7.09.2069</p>
+                                <span class="info-sub-text">6.09.2069 - 7.09.2069</span>
                                 <hr class="divider-sidebar">
-                                <p class="info-main-text" id="price-text">PRICE</p>
+                                <span class="info-main-text" id="price-text">PRICE</span>
                                 <h6 id="price-amount">$69.69</h6>
-                                <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button" onclick="document.location='buy-page.html'">Buy Tickets</button> 
+                                <a href="buy-page.html">
+                                    <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button">Buy Tickets</button> 
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +123,7 @@
                         <h3 class="info-subheading-text">Creator</h3>
                         <div class="row">
                             <div class="col" id="logo">
-                                <img src="../img/markfischbach.jpg" alt="Placeholder..." class="img-fluid">
+                                <img src="../img/markfischbach.jpg" alt="Placeholder..." class="img-fluid" id="creator-image">
                             </div>
                             <div class="col" id="info-creator">
                                 <h4 class="info-subheading-text">Markiplier</h6>

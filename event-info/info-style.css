@@ -38,7 +38,7 @@ html, body {
 }
 
 .flex-column {
-    padding-top: 10vw;
+    padding-top: 6vw;
     margin-right: 2vw;
 }
 
@@ -91,7 +91,7 @@ html, body {
 }
 
 #price-amount {
-    margin-top: -15px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 600;
     color: crimson;
@@ -113,9 +113,11 @@ html, body {
     width: 29vw;
 }
 
-#to-creator-button {
-    padding-bottom: 1vw;
-}
+#creator-image {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+  }
 
 #info-disclaimer {
     padding-top: 2vw;
@@ -165,7 +167,20 @@ html, body {
 
 @media only screen and (max-width: 420px) {
     .flex-column {
-        padding-top: 8vw;
+        padding-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        width: 90vw;
+        position: absolute;
+        padding-bottom: 10vw;
+    }
+
+    .divider-sidebar {
+        width: 100%;
     }
 
     .tickets-title {

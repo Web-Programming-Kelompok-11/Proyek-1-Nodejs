@@ -32,8 +32,13 @@ html, body {
     font-weight: 500;
 }
 
+#abouttext {
+    padding-left: 0;
+}
+
 #sticky-sidebar {
     padding-right: 8vw;
+    order: 2;
 }
 
 .info-sidebar-title {
@@ -50,6 +55,7 @@ html, body {
     padding-top: 2vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    order: 1;
 }
 
 #info-type {
@@ -62,7 +68,7 @@ html, body {
 
 #info-title-text {
     padding-top: -4em;
-    padding-bottom: 0.5em;
+    padding-bottom: 12px;
     margin-top: -0.4em;
 }
 
@@ -173,7 +179,7 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 421px) {
     .flex-column {
         padding-top: 10vw;
         display: flex;
@@ -185,6 +191,7 @@ html, body {
         width: 90vw;
         position: absolute;
         padding-bottom: 10vw;
+        margin-right: 100px;
     }
 
     .divider-sidebar {

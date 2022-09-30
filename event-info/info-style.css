@@ -7,6 +7,10 @@ html, body {
     color: #222;
 }
 
+.invisible {
+    display: none;
+}
+
 .navbar {
     position: fixed;
     padding: .8rem 1rem;
@@ -115,7 +119,7 @@ html, body {
 
 #creator-image {
     object-fit: contain;
-    width: 300px;
+    width: 400px;
     height: 300px;
   }
 
@@ -136,6 +140,10 @@ html, body {
 .individual-tickets {
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
+
+.google-map-link {
+    padding-bottom: 10px;
 }
 
 .map-container-2{

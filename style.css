@@ -205,7 +205,9 @@ html, body {
   }
 
   .fa:hover {
-    opacity: 0.7;
+    opacity: 0.6;
+    color: white;
+    text-decoration: none;
   }
   
   .fa-facebook {
@@ -234,7 +236,7 @@ html, body {
   }
   
   .fa-instagram {
-    background: #125688;
+    background: #bc2a8d;
     color: white;
   }
 

@@ -66,6 +66,10 @@ html, body {
     padding-left: 3px; /* fix weird alignment issue */
 }
 
+.info-main-text {
+    text-align: justify;
+}
+
 #info-title-text {
     padding-top: -4em;
     padding-bottom: 12px;
@@ -123,11 +127,18 @@ html, body {
     width: 29vw;
 }
 
+#logo {
+    position: flex;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
+
 #creator-image {
     object-fit: contain;
     width: 400px;
     height: 300px;
-  }
+}
 
 #info-disclaimer {
     padding-top: 2vw;

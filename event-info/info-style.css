@@ -96,6 +96,7 @@ html, body {
 .info-sub-text {
     font-weight: 450;
     color: grey;
+    text-align: justify;
 }
 
 #price-text {

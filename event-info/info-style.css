@@ -11,6 +11,7 @@ html, body {
     display: none;
 }
 
+/*navbar*/
 .navbar {
     position: fixed;
     padding: .8rem 1rem;
@@ -36,6 +37,7 @@ html, body {
     padding-left: 0;
 }
 
+/* -info.html sidebar*/
 #sticky-sidebar {
     padding-right: 8vw;
     order: 2;
@@ -51,6 +53,7 @@ html, body {
     margin-right: 2vw;
 }
 
+/*text*/
 #info-main {
     padding-top: 2vw;
     padding-left: 5vw;
@@ -76,7 +79,7 @@ html, body {
     margin-top: -0.4em;
 }
 
-#info-poster-main-img {
+#info-poster-main-img { /*img poster*/
     padding-top: 0.2em;
     padding-bottom: 0.5em;
     border-radius: 12px;
@@ -112,6 +115,7 @@ html, body {
     font-size: 25px;
 }
 
+/*dividers*/
 .divider-invisible {
     border-color: white;
     width: 100%;
@@ -127,6 +131,7 @@ html, body {
     width: 29vw;
 }
 
+/* creator img */
 #logo {
     position: flex;
     display: flex; /* add */
@@ -144,6 +149,7 @@ html, body {
     padding-top: 2vw;
 }
 
+/* buy page */
 .tickets-title {
     padding-top: 3vw;
     padding-bottom: 1vw;
@@ -159,6 +165,7 @@ html, body {
     margin-bottom: 10px;
 }
 
+/* google map embeds */
 .google-map-link {
     padding-bottom: 10px;
 }
@@ -178,7 +185,7 @@ html, body {
     position:absolute;
   } 
 
-/*mobile only*/
+/* browser size */
 @media only screen and (max-width: 768px) {
     .flex-column {
         padding-top: 15vw;

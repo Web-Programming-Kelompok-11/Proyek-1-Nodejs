@@ -7,6 +7,7 @@ html, body {
     color: #222;
 }
 
+/*navbar*/
 .navbar {
     padding: .8rem 1rem;
     /* shadows */
@@ -32,6 +33,7 @@ html, body {
   padding-left: 0;
 }
 
+/*carousel*/
 .carousel-inner img {
     height: 100%;
     width: 100%;
@@ -76,6 +78,7 @@ html, body {
     background: #001c9b;
   }
 
+  /*text and divider*/
   .display-4 {
     padding-top: 3vw;
     padding-bottom: 3vw;
@@ -121,6 +124,7 @@ html, body {
     color: rgb(160, 160, 160);
   }
 
+  /*footer*/
   footer {
     background-color: #0275d8 ;
     color: #fafafa;
@@ -145,6 +149,7 @@ html, body {
     margin-bottom: -1vw;
   }
 
+  /*about.html*/
   .about-heading {
     background-image: url("img/tentative-about-heading-1.gif");
     background-position: center;
@@ -258,7 +263,7 @@ html, body {
     color: white;
   }
 
-/*mobile*/
+/* browser size */
 @media only screen and (max-width: 992px) {
   #display-about-logo {
     color: rgb(255, 255, 255);

@@ -212,6 +212,12 @@ html, body {
         margin-right: 100px;
     }
 
+    .flex-column .info-sub-text {
+        font-weight: 450;
+        color: grey;
+        text-align: center;
+    }
+
     .divider-sidebar {
         width: 100%;
     }

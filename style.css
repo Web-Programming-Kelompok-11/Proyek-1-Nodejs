@@ -263,6 +263,46 @@ html, body {
     color: white;
   }
 
+  /* checkout.html */
+  #billing-container {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  .displayBlock { /* hide and display classes*/
+    padding: 10px;
+    display: none !important;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .price-amount { /* text */
+    margin-top: 7px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: crimson;
+    font-size: 20px;
+  }
+
+  .product-name {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .creator-name {
+    font-weight: 450;
+    color: dimgrey;
+    text-align: justify;
+  }
+
+  .sub-text {
+    font-weight: 500;
+    color: grey;
+    text-align: justify;
+  }
+
 /* browser size */
 @media only screen and (max-width: 992px) {
   #display-about-logo {

@@ -185,6 +185,27 @@ html, body {
     position:absolute;
   } 
 
+
+  /* buy-page.html */
+  .event-title-div {
+    padding-top: -10px;
+  }
+
+  .event-title {
+    padding-left: 12.5px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  /* hide and show */
+  .displayBlock {
+    display: none !important;
+  }
+
+  .show {
+    display: block !important;
+  }
+
 /* browser size */
 @media only screen and (max-width: 768px) {
     .flex-column {

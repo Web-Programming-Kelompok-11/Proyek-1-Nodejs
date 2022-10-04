@@ -269,8 +269,12 @@ html, body {
     padding-bottom: 4vw;
   }
 
-  .displayBlock { /* hide and display classes*/
-    padding: 10px;
+  .displayBlock { /* hide and display events */
+    padding: 20px;
+    display: none !important;
+  }
+
+  .displayDate { /* hide and display events */
     display: none !important;
   }
 
@@ -289,6 +293,7 @@ html, body {
   .product-name {
     font-weight: 600;
     font-size: 20px;
+    text-align: justify;
   }
 
   .creator-name {

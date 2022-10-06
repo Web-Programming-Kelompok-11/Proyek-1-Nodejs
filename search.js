@@ -9,7 +9,8 @@ search(searchVar);
 
 //Using GET parameter to display the selected ticket/item
 function search(getparm) {
-    var filter, ul, li, a, i, txtValue;
+    var filter, ul, li, a, i, txtValue, emptyCounter;
+    emptyCounter = 0;
     filter = getparm.toUpperCase();
     console.log("filter: "+filter);
     ul = document.getElementById("search-results");
@@ -21,7 +22,13 @@ function search(getparm) {
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           li[i].style.display = "";
         } else {
-          li[i].style.display = "none";
+          li[i].style.display = "none"
+          emptyCounter = emptyCounter+1;
         }
       }
+
+    if (emptyCounter == li.length) {
+      var emptyContainer = document.getElementsByClassName("displayEmpty");
+      emptyContainer[0].className = emptyContainer[0].className.replace(" displayEmpty", "");
+    }
 }

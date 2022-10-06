@@ -19,7 +19,6 @@ function search(getparm) {
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
-        console.log("txtValue: "+txtValue);
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           li[i].style.display = "";
           console.log("display: showing");

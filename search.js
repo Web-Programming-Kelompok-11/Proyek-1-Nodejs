@@ -5,7 +5,6 @@ function getUrlVars() {
     return vars;
 }
 var searchVar = getUrlVars()["search"];
-console.log(searchVar);
 search(searchVar);
 
 //Using GET parameter to display the selected ticket/item
@@ -21,10 +20,8 @@ function search(getparm) {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           li[i].style.display = "";
-          console.log("display: showing");
         } else {
           li[i].style.display = "none";
-          console.log("display: none")
         }
       }
 }

@@ -43,6 +43,10 @@ html, body {
     color: #0275d8;
 }
 
+#text-search {
+    background-color: white;
+}
+
 /* -info.html sidebar*/
 #sticky-sidebar {
     padding-right: 8vw;

@@ -21,35 +21,43 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <i data-feather="log-in" style="color: #0275d8"></i>
-                ShowFinder
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between align-items-center w-75" id="navbarResponsive">
-                <ul class="navbar-nav mx-auto text-md-center text-left">
-                    <li class="nav-item">
-                        <a class="nav-link" href="category/music.html">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category/sports.html">Sports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category/entertainment.html">Entertainment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category/other.html">Other</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <i data-feather="log-in" style="color: #0275d8"></i>
+                    ShowFinder
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto text-lg-center text-left">
+                        <li class="nav-item">
+                            <a class="nav-link" href="category/music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category/sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category/entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category/other.html">Other</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" id="abouttext">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between align-items-center w-25" id="navbarResponsive">
+                    <form class="form-inline my-2 my-md-0" action="search.html" method="get">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+                        <button class="btn my-2 my-sm-0 border" type="submit" id="text-search">
+                            <i data-feather="search" style="color: #0275d8"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <a class="nav-link ml-auto" href="about.html" id="abouttext">About</a>
-            </div>
-        </div>
         </nav>
 
         <!-- Image slide -->

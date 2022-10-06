@@ -24,9 +24,14 @@ html, body {
     padding-right: 20px;
 }
 
+.navbar ul {
+    padding-left: 120px;
+  }
+
 .navlink {
     font-size: 1.1em !important;
 }
+
 
 .navbar-brand {
     font-size: 21px !important;
@@ -35,6 +40,7 @@ html, body {
 
 #abouttext {
     padding-left: 0;
+    color: #0275d8;
 }
 
 /* -info.html sidebar*/
@@ -207,6 +213,12 @@ html, body {
   }
 
 /* browser size */
+@media only screen and (max-width: 992px) {
+    .navbar ul {
+        padding-left: 13px;
+      }
+}
+
 @media only screen and (max-width: 768px) {
     .flex-column {
         padding-top: 15vw;
@@ -216,6 +228,10 @@ html, body {
         padding-top: 4vw;
         padding-bottom: 1vw;
     }
+
+    .navbar ul {
+        padding-left: 13px;
+      }
 }
 
 @media only screen and (max-width: 421px) {
@@ -253,4 +269,8 @@ html, body {
         height: 130vw;
         border-radius: 12px;
     }
+
+    .navbar ul {
+        padding-left: 13px;
+      }
 }

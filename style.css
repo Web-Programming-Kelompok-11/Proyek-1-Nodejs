@@ -38,6 +38,10 @@ html, body {
   color: #0275d8;
 }
 
+#text-search {
+  background-color: white;
+}
+
 /*carousel*/
 .carousel-inner img {
     height: 100%;
@@ -127,6 +131,13 @@ html, body {
 
   .more-place {
     color: rgb(160, 160, 160);
+  }
+
+  #display-4-entertainment {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-size: 50px;
+    font-weight: 300
   }
 
   /*footer*/
@@ -319,7 +330,7 @@ html, body {
   }
 
   ul#search-results {
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none; /* remove bullets */
   }
 
   #search-results li {
@@ -347,6 +358,14 @@ html, body {
 
   #search {
     width: 67%;
+  }
+
+  .emptyText {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 /* browser size */

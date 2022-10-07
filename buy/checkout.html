@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Checkout | ShowFinder</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="../style.css" rel="stylesheet" type="text/css">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -31,7 +31,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
           <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="../index.html">
                   <i data-feather="log-in" style="color: #0275d8"></i>
                   ShowFinder
               </a>
@@ -41,24 +41,24 @@
               <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarResponsive">
                   <ul class="navbar-nav mx-auto text-lg-center text-left">
                       <li class="nav-item">
-                          <a class="nav-link" href="category/music.html">Music</a>
+                          <a class="nav-link" href="../category/music.html">Music</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="category/sports.html">Sports</a>
+                          <a class="nav-link" href="../category/sports.html">Sports</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="category/entertainment.html">Entertainment</a>
+                          <a class="nav-link" href="../category/entertainment.html">Entertainment</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="category/other.html">Other</a>
+                          <a class="nav-link" href="../category/other.html">Other</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="about.html" id="abouttext">About</a>
+                          <a class="nav-link" href="../about.html" id="abouttext">About</a>
                       </li>
                   </ul>
               </div>
               <div class="collapse navbar-collapse justify-content-between align-items-center w-25" id="navbarResponsive">
-                  <form class="form-inline my-2 my-md-0" action="search.html" method="get">
+                  <form class="form-inline my-2 my-md-0" action="../search.html" method="get">
                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
                       <button class="btn my-2 my-sm-0 border" type="submit" id="text-search">
                           <i data-feather="search" style="color: #0275d8"></i>
@@ -244,7 +244,7 @@
                     <!-- main content -->
                     <div class="col-md-8 order-md-1">
                       <h4 class="mb-3">Billing address</h4>
-                      <form class="needs-validation" novalidate>
+                      <form class="needs-validation" action="payment.html" novalidate>
                         <div class="row">
                           <div class="col-md-6 mb-3">
                             <label for="firstName">First name</label>
@@ -265,9 +265,9 @@
                         <div class="mb-3">
                           <label for="email">Email</label>
                           <p class="text-muted">Your tickets will be sent to this email address</p>
-                          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                           <div class="invalid-feedback">
-                            Please enter a valid email address for shipping updates.
+                            Please enter a valid email address for online tickets and shipping updates.
                           </div>
                         </div>
 
@@ -537,135 +537,9 @@
                             Please enter your shipping address.
                           </div>
                         </div>
-                
-                        <hr class="mb-4">
-                
-                        <h4 class="mb-3">Payment</h4>
-                
-                        <div class="d-block my-3">
-                          <div class="custom-control custom-radio">
-                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="credit" onclick="toggle('formCredit');">Credit card</label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="debit" onclick="toggle('formDebit');">Debit card</label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="paypal" onclick="toggle('formPaypal');">PayPal</label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input id="other" type="radio" class="custom-control-input" disabled>
-                            <label class="custom-control-label">Other (Currently unavailable)</label>
-                          </div>
-                        </div>
-                        <div id="formCredit" style="display: none;">
-                          <div class="row">
-                            <div class="col-md-6 mb-3">
-                              <label for="cc-name">Name on card</label>
-                              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                              <small class="text-muted">Full name as displayed on card</small>
-                              <div class="invalid-feedback">
-                                Name on card is required
-                              </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                              <label for="cc-number">Credit card number</label>
-                              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Credit card number is required
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-3 mb-3">
-                              <label for="cc-expiration">Expiration</label>
-                              <input type="datepicker" class="form-control" id="cc-expiration" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Expiration date required
-                              </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                              <label for="cc-cvv">Security Code</label>
-                              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Security code required
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div id="formDebit" style="display: none;">
-                          <div class="row">
-                            <!--
-                            <div class="col-md-6 mb-3">
-                              <label for="cc-name">Name on card</label>
-                              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                              <small class="text-muted">Full name as displayed on card</small>
-                              <div class="invalid-feedback">
-                                Name on card is required
-                              </div>
-                            </div>
-                            -->
-                            <div class="col-md-6 mb-3">
-                              <label for="cc-number">Debit card number</label>
-                              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Debit card number is required
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-3 mb-3">
-                              <label for="cc-expiration">Expiration</label>
-                              <input type="datepicker" class="form-control" id="cc-expiration" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Expiration date required
-                              </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                              <label for="cc-cvv">Security Code</label>
-                              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                              <div class="invalid-feedback">
-                                Security code required
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div id="formPaypal" style="display: none;">
-                          <!--https://developer.paypal.com/api/nvp-soap/paypal-payments-standard/integration-guide/formbasics/-->
-                          <!-- Saved buttons use the "secure click" command -->
-                          <input type="hidden" name="cmd" value="">
-                          <!-- Saved buttons are identified by their button IDs -->
-                          <input type="hidden" name="hosted_button_id" value="221">
-                          <!-- Saved buttons display an appropriate button image. -->
-                          <input type="image" name="submit"
-                            src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
-                            alt="PayPal - The safer, easier way to pay online">
-                          <img alt="" width="1" height="1"
-                            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                        </div>
-
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" data-toggle="modal" data-target="#purchaseModal" data-backdrop="static" data-keyboard="false">Purchase</button>
-                      </form>
-                      <!-- Modal/popup -->
-                      <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="purchaseModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="purchaseModalLabel">Transaction successful!</h5>
-                            </div>
-                            <div class="modal-body">
-                              <p>Thank you for your purchase!</p>
-                              <p>Digital tickets will be sent to your email and physical tickets to your home address max. 14 working days from purchase date. Contact cust. service for any issues with tickets.</p>
-                            </div>
-                            <div class="modal-footer">
-                              <a href="index.html" class="btn btn-secondary">Return to Home</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      
+                      <button class="btn btn-primary btn-lg btn-block" type="submit" for="data">Payment Options</button>
+                    </form>
                     </div>
                 </div>
             </div>

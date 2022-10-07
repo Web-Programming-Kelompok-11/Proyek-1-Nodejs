@@ -54,7 +54,7 @@ if(findGetParameter("sessionID")) { // Check if parameter matches
     displayTheDate(findGetParameter("sessionID"));
  }
  
- function displayTheDate(n) { // Display the selected ticket/item
+ function displayTheDate(n) { // Display the selected date
      var products = document.getElementsByClassName("displayDate");
      products[preN].className = products[preN].className.replace(" show", "");
      products[n].className += " show";
@@ -62,11 +62,3 @@ if(findGetParameter("sessionID")) { // Check if parameter matches
      preN = n;
  }
 
- //changing payment method
- function toggle(form) { 
-  document.getElementById("formCredit").style.display = "none"; 
-  document.getElementById("formDebit").style.display = "none";
-  //document.getElementById("formPaypal").style.display = "none"; 
-  document.getElementById(form).style.display = "block"; 
-} 
- 

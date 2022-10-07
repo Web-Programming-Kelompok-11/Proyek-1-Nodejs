@@ -62,5 +62,11 @@ if(findGetParameter("sessionID")) { // Check if parameter matches
      preN = n;
  }
 
- //country and state dropdown
+ //changing payment method
+ function toggle(form) { 
+  document.getElementById("formCredit").style.display = "none"; 
+  document.getElementById("formDebit").style.display = "none";
+  //document.getElementById("formPaypal").style.display = "none"; 
+  document.getElementById(form).style.display = "block"; 
+} 
  

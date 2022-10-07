@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Payment Method | ShowFinder</title>
+        <link href="../style.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <!-- feathericons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <style>
+            .feather {
+                width: 24px;
+                height: 24px;
+                vertical-align: text-bottom;
+            }
+
+            .container {
+             max-width: 960px;
+            }
+
+            .lh-condensed {
+                line-height: 1.25;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                  <i data-feather="log-in" style="color: #0275d8"></i>
+                  ShowFinder
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarResponsive">
+                  <ul class="navbar-nav mx-auto text-lg-center text-left">
+                      <li class="nav-item">
+                          <a class="nav-link" href="../category/music.html">Music</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../category/sports.html">Sports</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../category/entertainment.html">Entertainment</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../category/other.html">Other</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../about.html" id="abouttext">About</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="collapse navbar-collapse justify-content-between align-items-center w-25" id="navbarResponsive">
+                  <form class="form-inline my-2 my-md-0" action="../search.html" method="get">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+                      <button class="btn my-2 my-sm-0 border" type="submit" id="text-search">
+                          <i data-feather="search" style="color: #0275d8"></i>
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+
+        <!-- Modal/popup for completed transaction -->
+        <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="purchaseModalLabel">Transaction successful!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for your purchase!</p>
+                        <p>Digital tickets will be sent to your email and physical tickets to your home address max. 14 working days from purchase date. Contact cust. service for any issues with tickets.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="../index.html" class="btn btn-secondary">Return to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+            <script src="payment-complete.js"></script>
+    </body>
+</html>

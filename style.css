@@ -7,6 +7,10 @@ html, body {
     color: #222;
 }
 
+.invisible {
+  display: none;
+}
+
 /*navbar*/
 .navbar {
     padding: .8rem 1rem;
@@ -87,6 +91,40 @@ html, body {
     background: #001c9b;
   }
 
+  /* -info.html sidebar*/
+#sticky-sidebar {
+  padding-right: 8vw;
+  order: 2;
+}
+
+.info-sidebar-title {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+.flex-column {
+  padding-top: 6vw;
+  margin-right: 2vw;
+}
+
+/* creator img */
+#logo {
+  position: flex;
+  display: flex; /* add */
+  justify-content: center; /* add to align horizontal */
+  align-items: center; /* add to align vertical */
+}
+
+#creator-image {
+  object-fit: contain;
+  width: 400px;
+  height: 300px;
+}
+
+#info-disclaimer {
+  padding-top: 2vw;
+}
+
   /*text and divider*/
   .display-4 {
     padding-top: 3vw;
@@ -99,6 +137,67 @@ html, body {
     padding-bottom: 3vw;
     margin: 0px auto;
   }
+
+  #info-main {
+    padding-top: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    order: 1;
+}
+
+#info-type {
+    font-size: 1em;
+    font-weight: 400;
+    color: royalblue;
+    padding-bottom: 0em;
+    padding-left: 3px; /* fix weird alignment issue */
+}
+
+.info-main-text {
+    text-align: justify;
+}
+
+#info-title-text {
+    padding-top: -4em;
+    padding-bottom: 12px;
+    margin-top: -0.4em;
+}
+
+#info-poster-main-img { /*img poster*/
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    border-radius: 12px;
+}
+
+.info-subheading-text {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+}
+
+.info-place-text {
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+}
+
+.info-sub-text {
+    font-weight: 450;
+    color: grey;
+    text-align: justify;
+}
+
+#price-text {
+    font-weight: 200;
+    color: grey;
+    font-size: 15px;
+}
+
+#price-amount {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: crimson;
+    font-size: 25px;
+}
 
   .divider1 {
     border-color: white;
@@ -121,6 +220,21 @@ html, body {
     margin-top: 2vw;
     margin-bottom: -2vw;
   }
+
+  .divider-invisible {
+    border-color: white;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: -2vw;
+}
+
+.divider-main {
+    width: 100%;
+}
+
+.divider-sidebar {
+    width: 29vw;
+}
 
   .welcome hr {
     border-top: 2px solid #b4b4b4;
@@ -164,6 +278,63 @@ html, body {
     margin-top: 1vw;
     margin-bottom: -1vw;
   }
+
+  /* buy page */
+.tickets-title {
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+}
+
+.tickets-batch {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.individual-tickets {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* google map embeds */
+.google-map-link {
+  padding-bottom: 10px;
+}
+
+.map-container-2{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-container-2 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+} 
+
+
+/* buy-page.html */
+.event-title-div {
+  padding-top: -10px;
+}
+
+.event-title {
+  padding-left: 12.5px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* hide and show */
+.displayBlock {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
 
   /*about.html*/
   .about-heading {
@@ -382,6 +553,28 @@ html, body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #display-about-logo {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: 0vw 0vw 0.5vw #000, 0.5vw 0.5vw 0.5vw #000; 
+    padding-top: 60px;
+  }
+
+  .flex-column {
+      padding-top: 15vw;
+  }
+
+  .tickets-title {
+      padding-top: 4vw;
+      padding-bottom: 1vw;
+  }
+
+  .navbar ul {
+      padding-left: 13px;
+    }
+}
+
 @media only screen and (max-width: 485px) {
   #display-about-logo {
     color: rgb(255, 255, 255);
@@ -398,9 +591,99 @@ html, body {
   .navbar ul {
     padding-left: 13px;
   }
+
+  .flex-column {
+    padding-top: 15vw;
+}
+
+.tickets-title {
+    padding-top: 4vw;
+    padding-bottom: 1vw;
+}
+
+.navbar ul {
+  padding-left: 13px;
+}
+
+}
+
+@media only screen and (max-width: 421px) {
+  .flex-column {
+      padding-top: 10vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      width: 90vw;
+      position: absolute;
+      padding-bottom: 10vw;
+      margin-right: 100px;
+  }
+
+  .flex-column .info-sub-text {
+      font-weight: 450;
+      color: grey;
+      text-align: center;
+  }
+
+  .divider-sidebar {
+      width: 100%;
+  }
+
+  .tickets-title {
+      padding-top: 6vw;
+      padding-bottom: 1vw;
+  }
+
+  #info-poster-main-img {
+      width: 100%;
+      height: 130vw;
+      border-radius: 12px;
+  }
+
+  .navbar ul {
+      padding-left: 13px;
+    }
 }
 
 @media only screen and (max-width: 406px) {
+  .flex-column {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    width: 90vw;
+    position: absolute;
+    padding-bottom: 10vw;
+    margin-right: 100px;
+}
+
+.flex-column .info-sub-text {
+    font-weight: 450;
+    color: grey;
+    text-align: center;
+}
+
+.divider-sidebar {
+    width: 100%;
+}
+
+.tickets-title {
+    padding-top: 6vw;
+    padding-bottom: 1vw;
+}
+
+#info-poster-main-img {
+    width: 100%;
+    height: 130vw;
+    border-radius: 12px;
+}
+
   .carousel-caption-h3 {
     margin-bottom: -1.5vw;
     font-size: 3vw;
@@ -428,6 +711,41 @@ html, body {
 }
 
 @media only screen and (max-width: 372px) {
+  .flex-column {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    width: 90vw;
+    position: absolute;
+    padding-bottom: 10vw;
+    margin-right: 100px;
+}
+
+.flex-column .info-sub-text {
+    font-weight: 450;
+    color: grey;
+    text-align: center;
+}
+
+.divider-sidebar {
+    width: 100%;
+}
+
+.tickets-title {
+    padding-top: 6vw;
+    padding-bottom: 1vw;
+}
+
+#info-poster-main-img {
+    width: 100%;
+    height: 130vw;
+    border-radius: 12px;
+}
+
   .carousel-caption-h3 {
     margin-bottom: -1.5vw;
     font-size: 3vw;

@@ -540,6 +540,12 @@ html, body {
   }
 
 /* browser size */
+@media only screen and (max-width: 1106px) {
+  #text-search {
+    padding: 6px 8px 6px 8px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   #display-about-logo {
     color: rgb(255, 255, 255);

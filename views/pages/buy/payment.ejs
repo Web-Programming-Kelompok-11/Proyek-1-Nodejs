@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Method | ShowFinder</title>
+    <%- include('../../partials/_head.ejs') %>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <%- include('../../partials/_nav.ejs') %>
+    </nav>
+
+            <!-- checkout -->
+            <div class="container" id="billing-container">
+                <div class="col">
+                    <h4 class="mb-3">Payment</h4>
+                    <!-- cart -->
+                    <div class="col-md-4 order-md-2 mb-4">
+                     <!-- TODO: Forms delete get parameters so this will always be invisible. Fix with POST? -->
+                      <!-- eventID=0 - bola -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Manchester United VS Paris Saint-Germain</h6>
+                        <small class="creator-name">Creator</small>
+                          <div class="displayDate"> <!-- sessionID=0 -->
+                            <small class="date">12 Nov 2025</small><br>
+                            <span class="date">9:00 PM - Finish</span> 
+                          </div>
+                        <p class="price-amount">$816.44</p>
+                      </div>
+                      <!-- eventID=1 - connor -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Connor Talkshow</h6>
+                        <small class="creator-name">CDawgVA</small>
+                          <div class="displayDate"> <!-- sessionID=1 -->
+                            <small class="date">10 Dec 2077</small><br>
+                            <span class="date">8:30 PM - 10:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$20.00</p>
+                      </div>
+                      <!-- eventID=2 - jimmy -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Jimmy On Tour</h6>
+                        <small class="creator-name">Jimmy O. Yang</small>
+                          <div class="displayDate"> <!-- sessionID=2 -->
+                            <small class="date">3 June 2023</small><br>
+                            <span class="date">7:30 PM - 9:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$25.00</p>
+                      </div>
+                      <!-- eventID=3 - mark -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Markiplier Show</h6>
+                        <small class="creator-name">Markiplier</small>
+                          <div class="displayDate"> <!-- sessionID=3 -->
+                            <small class="date">6 Sept 2069</small><br>
+                            <span class="date">7:00 PM - 8:30 PM</span>  
+                          </div>
+                          <div class="displayDate"> <!-- sessionID=4 -->
+                            <small class="date">7 Sept 2069</small><br>
+                            <span class="date">7:00 PM - 8:30 PM</span>  
+                          </div>
+                        <p class="price-amount">$69.69</p>
+                      </div>
+                      <!-- eventID=4 - mole -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">RRQ VS GPX</h6>
+                        <small class="creator-name">MDL</small>
+                          <div class="displayDate"> <!-- sessionID=5 -->
+                            <small class="date">5 July 2028</small><br>
+                            <span class="date">8:00 PM - 12:00 PM</span>  
+                          </div>
+                          <div class="displayDate"> <!-- sessionID=6 -->
+                            <small class="date">7 July 2028</small><br>
+                            <span class="date">8:00 PM - 12:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$5.00</p>
+                      </div>
+                      <!-- eventID=5 - nba -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Warriors VS Lakers</h6>
+                        <small class="creator-name">NBA</small>
+                          <div class="displayDate"> <!-- sessionID=7 -->
+                            <small class="date">10 Oct 2024</small><br>
+                            <span class="date">4:00 PM - 7:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$99.99</p>
+                      </div>
+                      <!-- eventID=6 - radit -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">SUCRD</h6>
+                        <small class="creator-name">Raditya Dika</small>
+                          <div class="displayDate"> <!-- sessionID=8 -->
+                            <small class="date">11 Sept 2025</small><br>
+                            <span class="date">7:30 PM - 9:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$15.00</p>
+                      </div>
+                      <!-- eventID=7 - rick -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Rick Concert</h6>
+                        <small class="creator-name">Rick Astley</small>
+                          <div class="displayDate"> <!-- sessionID=9 -->
+                            <small class="date">24 Dec 2030</small><br>
+                            <span class="date">8:00 PM - 9:00 PM</span>  
+                          </div>
+                          <div class="displayDate"> <!-- sessionID=10 -->
+                            <small class="date">25 Dec 2030</small><br>
+                            <span class="date">8:00 PM - 9:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$25.00</p>
+                      </div>
+                      <!-- eventID=8 - valo -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Twitch Rivals: Valorant</h6>
+                        <small class="creator-name">Twitch</small>
+                          <div class="displayDate"> <!-- sessionID=11 -->
+                            <small class="date">16 Feb 2023</small><br>
+                            <span class="date">1:00 PM - Finish</span>  
+                          </div>
+                          <div class="displayDate"> <!-- sessionID=12 -->
+                            <small class="date">17 Feb 2023</small><br>
+                            <span class="date">1:00 PM - Finish</span>  
+                          </div>
+                          <div class="displayDate"> <!-- sessionID=13 -->
+                            <small class="date">18 Feb 2023</small><br>
+                            <span class="date">1:00 PM - Finish</span>  
+                          </div>
+                        <p class="price-amount">$129.00</p>
+                      </div>
+                      <!-- eventID=9 - wwe -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">The Rock VS John Cena</h6>
+                        <small class="creator-name">WWE</small>
+                          <div class="displayDate"> <!-- sessionID=14 -->
+                            <small class="date">21 Jan 2099</small><br>
+                            <span class="date">8:00 PM - 10:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$129.99</p>
+                      </div>
+                      <!-- eventID=10 - yoasobi -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Winter Music Festival</h6>
+                        <small class="creator-name">MDL</small>
+                          <div class="displayDate"> <!-- sessionID=15 -->
+                            <small class="date">16 Dec 2023</small><br>
+                            <span class="date">7:30 PM - 9:00 PM</span>  
+                          </div>
+                        <p class="price-amount">$30.00</p>
+                      </div>
+                      <!-- eventID=11 - sao -->
+                      <div class="border displayBlock">
+                        <h6 class="product-name">Sword Art Online Progressive</h6>
+                        <small class="creator-name">Ayako Kōno</small>
+                          <div class="displayDate"> <!-- sessionID=16 -->
+                            <small class="date">1 Jan 2022</small><br>
+                            <span class="date">10:50 AM - Finish</span>  
+                            <p class="price-amount">$3.59</p>
+                          </div>
+                          <div class="displayDate"> <!-- sessionID=17 -->
+                            <small class="date">1 Jan 2022</small><br>
+                            <span class="date">2:00 PM - Finish</span>  
+                            <p class="price-amount">$3.92</p>
+                          </div>
+                      </div>
+
+                    </div>
+
+                    <!-- main content -->
+                    <div class="col-md-8 order-md-1"><div class="d-block my-3">
+                          <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="credit" onclick="toggle('formCredit');">Credit card</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit" onclick="toggle('formDebit');">Debit card</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal" onclick="toggle('formPaypal');">PayPal</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="other" type="radio" class="custom-control-input" disabled>
+                            <label class="custom-control-label">Other (Currently unavailable)</label>
+                          </div>
+                        </div>
+                      </form>
+                      <form class="needs-validation" id="formCredit" style="display: none;" action="payment-complete.html" novalidate>
+                          <div class="row">
+                            <div class="col-md-6 mb-3">
+                              <label for="cc-name">Name on card</label>
+                              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                              <small class="text-muted">Full name as displayed on card</small>
+                              <div class="invalid-feedback">
+                                Name on card is required
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="cc-number">Credit card number</label>
+                              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Credit card number is required
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-3 mb-3">
+                              <label for="cc-expiration">Expiration</label>
+                              <input type="datepicker" class="form-control" id="cc-expiration" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Expiration date required
+                              </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="cc-cvv">Security Code</label>
+                              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Security code required
+                              </div>
+                            </div>
+                          </div>
+                          <hr class="mb-4">
+                          <button class="btn btn-primary btn-lg btn-block" type="submit" for="data">Purchase</button>
+                        </form>
+
+                        <form class="needs-validation" id="formDebit" style="display: none;" action="payment-complete.html" novalidate>
+                          <div class="row">
+                            <!--
+                            <div class="col-md-6 mb-3">
+                              <label for="cc-name">Name on card</label>
+                              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                              <small class="text-muted">Full name as displayed on card</small>
+                              <div class="invalid-feedback">
+                                Name on card is required
+                              </div>
+                            </div>
+                            -->
+                            <div class="col-md-6 mb-3">
+                              <label for="cc-number">Debit card number</label>
+                              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Debit card number is required
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-3 mb-3">
+                              <label for="cc-expiration">Expiration</label>
+                              <input type="datepicker" class="form-control" id="cc-expiration" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Expiration date required
+                              </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="cc-cvv">Security Code</label>
+                              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                              <div class="invalid-feedback">
+                                Security code required
+                              </div>
+                            </div>
+                          </div>
+                          <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" for="data">Purchase</button>
+                        </form>
+                        
+                        <form class="needs-validation" id="formPaypal" style="display: none;" action="payment-complete.html" novalidate>
+                          <div class="row">
+                            <div class="col-md-6 mb-3">
+                              <label for="cc-name">PayPal Email</label>
+                              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                              <small class="text-muted">Email address associated with PayPal account</small>
+                              <div class="invalid-feedback">
+                                PayPal Email is required
+                              </div>
+                            </div>
+                          </div>
+                          <hr class="mb-4">
+                          <button class="btn btn-primary btn-lg btn-block" type="submit" for="data">Purchase</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+            <script src="/js/payment.js"></script>
+    </body>
+</html>

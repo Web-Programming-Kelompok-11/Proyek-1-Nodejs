@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RRQ VS GPX | ShowFinder</title>
+        <%- include('../../partials/_head.ejs') %>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <%- include('../../partials/_nav.ejs') %>
+        </nav>
+
+            <div class="container-fluid padding">
+                <div class="row py-3">
+                    <!-- sticky sidebar -->
+                    <div class="col-sm-4 col-lg-4 order-2 mx-1" id="sticky-sidebar">
+                        <div class="sticky-top">
+                            <div class="nav flex-column">
+                                <h3 class="info-sidebar-title">RRQ VS GPX</h3>
+                                <p class="info-sub-text">By MDL</p>
+                                <p class="info-place-text">CITY</p>
+                                <span class="info-sub-text">Surabaya</span>
+                                <hr class="divider-sidebar">
+                                <span class="info-main-text">Location</span>
+                                <span class="info-sub-text">Ahmad Yani Street No.99, Jemur Wonosari, Kec. Wonocolo, Surabaya, East Java 60234, ID</span>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Schedule</p>
+                                <span class="info-sub-text">5 July 2028 - 7 July 2028</span>
+                                <hr class="divider-sidebar">
+                                <span class="info-main-text" id="price-text">PRICE</span>
+                                <h6 id="price-amount">$5.00</h6>
+                                <a href="../buy/buy-page.html?item=4">
+                                    <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button">Buy Tickets</button> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main -->
+                    <div class="col" id="info-main">
+                        <p id="info-type">Other</p>
+                        <h1 class="display-4" id="info-title-text">RRQ VS GPX</h1>
+                        <!--image -->
+                        <img src="../img/poster-mole.png" alt="RRQvGPX" class="img-fluid" id="info-poster-main-img">
+                        <hr class="divider-invisible">
+                        <!-- show desc. -->
+                        <h3 class="info-subheading-text">Description</h3>
+                        <p class="info-main-text">#VivaRRQ or #GPXANTIPECAH? Watch to find out! MDL is an official tournament held by Moonton.</p>
+                        <hr class="divider-main">
+                        <h3 class="info-subheading-text">Location</h3>
+                        <h6 class="info-place-text">Surabaya</h6>
+                        <p class="info-sub-text">Ahmad Yani Street No.99, Jemur Wonosari, Kec. Wonocolo, Surabaya, East Java 60234, ID</p>
+                        <h3 class="info-subheading-text">Location Description</h3>
+                        <p class="info-sub-text">JX International Convention Exhibition - Normally used for massive pop-up Events & Exhibitions</p>
+                        <div class="google-map-link"><a class="Location__StyledAnchor-hveuoR acHWG Anchor__Anchor-goxHTO bxuGhH" href="https://www.google.co.id/maps/place/JX+Internasional+Convention+Center/@-7.3182175,112.7330202,18z/data=!3m1!4b1!4m5!3m4!1s0x2dd7fb4ad6ee1703:0xf09f0763ce70389b!8m2!3d-7.3182175!4d112.7341172" target="_blank" rel="noopener noreferrer">View in Google Map</a></div>
+                        <div class="col-md-12">
+                            <div id="map-container-google" class="z-depth-1-half map-container-2">
+                            <iframe src="https://maps.google.com/maps?q=jx%20international%20convention&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                              style="border:0" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- schedules for show -->
+                        <h3 class="info-subheading-text">Schedules</h3>
+                        <div class="row">
+                            <div class="col" id="info-date">
+                                <h6 class="info-place-text">Friday - 05.07.2028</h6>
+                                <h6 class="info-place-text">Sunday - 07.07.2028</h6>
+                            </div>
+                            <div class="col" id="info-time">
+                                <h6 class="info-sub-text">8:00 PM - 12:00 PM</h6>
+                                <h6 class="info-sub-text">8:00 PM - 12:00 PM</h6>
+                            </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- creator/artist/etc. -->
+                        <h3 class="info-subheading-text">Creator</h3>
+                        <div class="row">
+                            <div class="col" id="logo">
+                                <img src="https://id-mdl.com/uploads/SEASON-6/Logo/LOGO-MDL-S6-400.png" alt="MDL Logo" class="img-fluid" id="creator-image" style="height: 200px;">
+                            </div>
+                            <div class="col" id="info-creator">
+                                <h4 class="info-subheading-text">Mobile Legends: Bang Bang Development League</h6>
+                                <p class="info-sub-text">MDL is an official tournament held by Moonton. Different from MPL which is the highest professional esports, while MDL is a level 2 tournament or below MPL. MDL is one of the tournaments that is used as an event to develop the talents of new pro players.</p>
+                            </div>
+                        </div>
+                        <!-- disclaimer -->
+                        <div class="row" id="info-disclaimer">
+                            <i data-feather="alert-circle" style="color: #ff1c1c"></i>
+                        <div class="col" id="info-disclaimer-text">
+                            <p class="info-sub-text">Photos, description, location, and schedules are posted by the organizer. ShowFinder is not responsible for any inaccuracy</p>
+                        </div>
+                    </div>
+                        <hr class="divider-invisible">
+                    </div> 
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+    </body>
+</html>

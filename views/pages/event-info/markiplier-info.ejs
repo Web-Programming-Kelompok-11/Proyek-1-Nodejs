@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Markiplier Show Live | ShowFinder</title>
+        <%- include('../../partials/_head.ejs') %>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <%- include('../../partials/_nav.ejs') %>
+        </nav>
+
+            <div class="container-fluid padding">
+                <div class="row py-3">
+                    <!-- sticky sidebar -->
+                    <div class="col-sm-4 col-lg-4 order-2 mx-1" id="sticky-sidebar">
+                        <div class="sticky-top">
+                            <div class="nav flex-column">
+                                <h3 class="info-sidebar-title">Markiplier Show</h3>
+                                <p class="info-sub-text">By Markiplier</p>
+                                <p class="info-place-text">CITY</p>
+                                <span class="info-sub-text">Los Angeles, California</span>
+                                <hr class="divider-sidebar">
+                                <span class="info-main-text">Location</span>
+                                <span class="info-sub-text">San Jose Civic | 135 West San Carlos Street, San Jose, CA 95113</span>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Schedule</p>
+                                <span class="info-sub-text">6 Sept 2069 - 7 Sept 2069</span>
+                                <hr class="divider-sidebar">
+                                <span class="info-main-text" id="price-text">PRICE</span>
+                                <h6 id="price-amount">$69.69</h6>
+                                <a href="../buy/buy-page.html?item=3">
+                                    <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button">Buy Tickets</button> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main -->
+                    <div class="col" id="info-main">
+                        <p id="info-type">Entertainment</p>
+                        <h1 class="display-4" id="info-title-text">Markiplier Show</h1>
+                        <!--image -->
+                        <img src="../img/poster-1.png" alt="Markiplier" class="img-fluid" id="info-poster-main-img">
+                        <hr class="divider-invisible">
+                        <!-- show desc. -->
+                        <h3 class="info-subheading-text">Description</h3>
+                        <p class="info-main-text">Markiplier Show: Created by Mark Fischbach. Mark plays video games and cracks some jokes</p>
+                        <hr class="divider-main">
+                        <h3 class="info-subheading-text">Location</h3>
+                        <h6 class="info-place-text">Los Angeles</h6>
+                        <p class="info-sub-text">San Jose Civic | 135 West San Carlos Street, San Jose, CA 95113</p>
+                        <h3 class="info-subheading-text">Location Description</h3>
+                        <p class="info-sub-text">San Jose Civic - Concert & shows in a historic building</p>
+                        <div class="google-map-link"><a class="Location__StyledAnchor-hveuoR acHWG Anchor__Anchor-goxHTO bxuGhH" href="https://www.google.com/maps/place/San+Jose+Civic/@37.3305926,-121.8896374,19.43z/data=!3m1!5s0x808fccbab9db63c7:0xb8099f9c7c2c0280!4m5!3m4!1s0x808fccbaba87c049:0x5c7261fe52871edf!8m2!3d37.3308292!4d-121.8897476" target="_blank" rel="noopener noreferrer">View in Google Map</a></div>
+                        <div class="col-md-12">
+                            <div id="map-container-google" class="z-depth-1-half map-container-2">
+                            <iframe src="https://maps.google.com/maps?q=San%20Jose%20Civic%20%7C%20135%20West%20San%20Carlos%20Street,%20San%20Jose,%20CA%2095113&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                              style="border:0" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- schedules for show -->
+                        <h3 class="info-subheading-text">Schedules</h3>
+                        <div class="row">
+                            <div class="col" id="info-date">
+                                <h6 class="info-place-text">Saturday - 6.09.2069</h6>
+                                <p class="info-place-text">Sunday - 7.09.2069</p>
+                            </div>
+                            <div class="col" id="info-time">
+                                <h6 class="info-sub-text">7:00 PM - 8:30 PM</h6>
+                                <p class="info-sub-text">7:00 PM - 8:30 PM</p>
+                            </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- creator/artist/etc. -->
+                        <h3 class="info-subheading-text">Creator</h3>
+                        <div class="row">
+                            <div class="col" id="logo">
+                                <img src="../img/markfischbach.jpg" alt="Placeholder..." class="img-fluid" id="creator-image">
+                            </div>
+                            <div class="col" id="info-creator">
+                                <h4 class="info-subheading-text">Markiplier</h6>
+                                <p class="info-sub-text">Mark Edward Fischbach (Fishbach, born June 28, 1989), better known as Markiplier, is an American YouTuber. Originally from Honolulu, Hawaii, he began his career in Cincinnati, Ohio, and is currently based in Los Angeles, California. In addition to uploading videos on his main YouTube channel, he is a co-founder of clothing company Cloak with fellow YouTuber Jacksepticeye and a co-host of the Distractible podcast alongside LordMinion777 and Muyskerm. He also co-hosted the now defunct Unus Annus channel.</p>
+                            </div>
+                        </div>
+                        <!-- disclaimer -->
+                        <div class="row" id="info-disclaimer">
+                            <i data-feather="alert-circle" style="color: #ff1c1c"></i>
+                        <div class="col" id="info-disclaimer-text">
+                            <p class="info-sub-text">Photos, description, location, and schedules are posted by the organizer. ShowFinder is not responsible for any inaccuracy</p>
+                        </div>
+                    </div>
+                        <hr class="divider-invisible">
+                    </div> 
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+    </body>
+</html>

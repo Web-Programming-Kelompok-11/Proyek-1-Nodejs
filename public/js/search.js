@@ -12,7 +12,8 @@ function search(getparm) {
     var filter, ul, li, a, i, txtValue, emptyCounter;
     emptyCounter = 0;
     filter = getparm.toUpperCase();
-    console.log("filter: "+filter);
+    filter = filter.replace("+", " "); //replacing + with space in case of multi-word search
+    filter = decodeURIComponent(filter); //decoding the URL. console.log("filter: "+filter); //testing
     ul = document.getElementById("search-results");
     li = ul.getElementsByTagName('li');
     a, txtValue;

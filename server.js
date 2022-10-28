@@ -30,23 +30,43 @@ app.get('/search', function (req, res) {
 //Category Routes
 // Music Category Route
 app.get('/category/music', function (req, res) {
-    res.render('pages/category/music');
+    switch(req.query.page) {
+    case '1':
+        res.render('pages/category/music');
+        break;
+    default: res.render('pages/category/music');
+    }
 });
-// Entertainment Category p.1 Route
+// Entertainment Category Route
 app.get('/category/entertainment', function (req, res) {
-    res.render('pages/category/entertainment');
-});
-// Entertainment Category p.2 Route
-app.get('/category/entertainment-1', function (req, res) {
-    res.render('pages/category/entertainment-1');
+    switch(req.query.page) {
+    case '1':
+        res.render('pages/category/entertainment');
+        break;
+    case '2':
+        res.render('pages/category/entertainment-1');
+        break;
+    default: 
+        res.render('pages/category/entertainment');
+    }
 });
 // Sports Category Route
 app.get('/category/sports', function (req, res) {
-    res.render('pages/category/sports');
+    switch(req.query.page) {
+        case '1':
+            res.render('pages/category/sports');
+            break;
+        default: res.render('pages/category/sports');
+    }
 });
 // Other Category Route
 app.get('/category/other', function (req, res) {
-    res.render('pages/category/other');
+    switch(req.query.page) {
+        case '1':
+            res.render('pages/category/other');
+            break;
+        default: res.render('pages/category/other');
+        }
 });
 //Events Routes
 app.get('/events/united-v-psg', function (req, res) {

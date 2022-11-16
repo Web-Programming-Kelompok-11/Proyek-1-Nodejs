@@ -11,6 +11,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 // Port website will run on
 app.listen(port);
+console.log(`listening to port`,port);
 
 // *** GET Routes - display pages ***
 //General Routes

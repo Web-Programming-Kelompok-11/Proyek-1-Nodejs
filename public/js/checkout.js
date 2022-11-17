@@ -80,4 +80,116 @@ function addTicketToForm() {
 
 window.onload = (event) => {
   addTicketToForm();
+  toggleCredit();
 ***REMOVED***
+
+//remove payment option
+function toggleOff() {
+  document.getElementById("paymentOption").remove();
+}
+
+//Add payment option to the form
+function toggleCredit(){
+  //div
+  var paymentOption = document.createElement("div");
+  paymentOption.setAttribute("id", "paymentOption");
+
+  //header
+  var header = document.createElement("h5");
+  header.setAttribute("class", "mb-3");
+  header.innerHTML = "Credit Card Details";
+
+  //credit card - name
+  var row1 = document.createElement("div");
+  row1.setAttribute("class", "row");
+  var row1col1 = document.createElement("div");
+  row1col1.setAttribute("class", "col-md-6 mb-3");
+  var row1label = document.createElement("label");
+  row1label.innerHTML = "Name on card";
+  var row1input = document.createElement("input");
+  row1input.setAttribute("type", "text");
+  row1input.setAttribute("class", "form-control");
+  row1input.setAttribute("id", "cc-name");
+  row1input.setAttribute("placeholder", "");
+  row1input.setAttribute("required", "");
+  row1input.setAttribute("name", "creditCard-name");
+  var row1small = document.createElement("small");
+  row1small.setAttribute("class", "text-muted");
+  row1small.innerHTML = "Full name as displayed on card";
+  var row1div = document.createElement("div");
+  row1div.setAttribute("class", "invalid-feedback");
+  row1div.innerHTML = "Name on card is required";
+  row1.appendChild(row1col1);
+  row1col1.appendChild(row1label);
+  row1col1.appendChild(row1input);
+  row1col1.appendChild(row1small);
+  row1col1.appendChild(row1div);
+
+  //credit card - number
+  var row1col2 = document.createElement("div");
+  row1col2.setAttribute("class", "col-md-6 mb-3");
+  var row1label2 = document.createElement("label");
+  row1label2.innerHTML = "Credit card number";
+  var row1input2 = document.createElement("input");
+  row1input2.setAttribute("type", "text");
+  row1input2.setAttribute("class", "form-control");
+  row1input2.setAttribute("id", "cc-number");
+  row1input2.setAttribute("placeholder", "");
+  row1input2.setAttribute("required", "");
+  row1input2.setAttribute("name", "creditCard-number");
+  var row1div2 = document.createElement("div");
+  row1div2.setAttribute("class", "invalid-feedback");
+  row1div2.innerHTML = "Credit card number is required";
+  row1.appendChild(row1col2);
+  row1col2.appendChild(row1label2);
+  row1col2.appendChild(row1input2);
+  row1col2.appendChild(row1div2);
+
+  //credit card - expiration
+  var row2 = document.createElement("div");
+  row2.setAttribute("class", "row");
+  var row2col1 = document.createElement("div");
+  row2col1.setAttribute("class", "col-md-3 mb-3");
+  var row2label = document.createElement("label");
+  row2label.innerHTML = "Expiration";
+  var row2input = document.createElement("input");
+  row2input.setAttribute("type", "datepicker");
+  row2input.setAttribute("class", "form-control");
+  row2input.setAttribute("id", "cc-expiration");
+  row2input.setAttribute("placeholder", "");
+  row2input.setAttribute("required", "");
+  row2input.setAttribute("name", "creditCard-expiration");
+  var row2div = document.createElement("div");
+  row2div.setAttribute("class", "invalid-feedback");
+  row2div.innerHTML = "Expiration date required";
+  row2.appendChild(row2col1);
+  row2col1.appendChild(row2label);
+  row2col1.appendChild(row2input);
+  row2col1.appendChild(row2div);
+
+  //credit card - security code
+  var row2col2 = document.createElement("div");
+  row2col2.setAttribute("class", "col-md-3 mb-3");
+  var row2label2 = document.createElement("label");
+  row2label2.innerHTML = "Security Code";
+  var row2input2 = document.createElement("input");
+  row2input2.setAttribute("type", "text");
+  row2input2.setAttribute("class", "form-control");
+  row2input2.setAttribute("id", "cc-cvv");
+  row2input2.setAttribute("placeholder", "");
+  row2input2.setAttribute("required", "");
+  row2input2.setAttribute("name", "creditCard-securityCode");
+  var row2div2 = document.createElement("div");
+  row2div2.setAttribute("class", "invalid-feedback");
+  row2div2.innerHTML = "Security code required";
+  row2.appendChild(row2col2);
+  row2col2.appendChild(row2label2);
+  row2col2.appendChild(row2input2);
+  row2col2.appendChild(row2div2);
+
+  //append it all
+  paymentOption.appendChild(header);
+  paymentOption.appendChild(row1);
+  paymentOption.appendChild(row2);
+  form.appendChild(paymentOption);
+}

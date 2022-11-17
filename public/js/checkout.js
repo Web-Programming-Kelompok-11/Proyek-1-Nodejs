@@ -71,6 +71,7 @@ function addTicketToForm() {
   date.setAttribute("name", "sessionID");
   show.setAttribute("type", "hidden");
   date.setAttribute("type", "hidden");
+  //TODO?: translate numbers into something understandable
   show.setAttribute("value", findGetParameter("eventID"));
   date.setAttribute("value", findGetParameter("sessionID"));
   form.appendChild(show);

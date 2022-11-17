@@ -190,14 +190,14 @@
                         <div class="row">
                           <div class="col-md-6 mb-3">
                             <label for="firstName">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                               Valid first name is required.
                             </div>
                           </div>
                           <div class="col-md-6 mb-3">
                             <label for="lastName">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                               Valid last name is required.
                             </div>
@@ -207,7 +207,7 @@
                         <div class="mb-3">
                           <label for="email">Email</label>
                           <p class="text-muted">Your tickets will be sent to this email address</p>
-                          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
                           <div class="invalid-feedback">
                             Please enter a valid email address for online tickets and shipping updates.
                           </div>
@@ -215,7 +215,7 @@
 
                         <div class="mb-3">
                           <label for="country">Country</label>
-                            <select class="custom-select d-block w-100" id="country" required>
+                            <select class="custom-select d-block w-100" id="country" name="country" required>
                               <!-- ISO-3166-1: Alpha-3 Codes, 238 countries -->
                               <option value="AFG">Afghanistan</option>
                               <option value="ALA">Åland Islands</option>
@@ -474,13 +474,13 @@
 
                         <div class="mb-3">
                           <label for="address">Address</label>
-                          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                          <input type="text" class="form-control" id="address" name="shippingAddress" placeholder="1234 Main St" required>
                           <div class="invalid-feedback">
                             Please enter your shipping address.
                           </div>
                         </div>
                       
-                      <button class="btn btn-primary btn-lg btn-block" type="submit" for="data">Payment Options</button>
+                      <button class="btn btn-primary btn-lg btn-block" type="submit">Payment Options</button>
                     </form>
                     </div>
                 </div>

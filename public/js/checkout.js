@@ -62,3 +62,21 @@ if(findGetParameter("sessionID")) { // Check if parameter matches
      preN = n;
  }
 
+//Adding the selected ticket/item to the form
+const form = document.getElementById("checkoutForm");
+function addTicketToForm() {
+  var show = document.createElement("input");
+  var date = document.createElement("input");
+  show.setAttribute("name", "eventID");
+  date.setAttribute("name", "sessionID");
+  show.setAttribute("type", "hidden");
+  date.setAttribute("type", "hidden");
+  show.setAttribute("value", findGetParameter("eventID"));
+  date.setAttribute("value", findGetParameter("sessionID"));
+  form.appendChild(show);
+  form.appendChild(date);
+}
+
+window.onload = (event) => {
+  addTicketToForm();
+};

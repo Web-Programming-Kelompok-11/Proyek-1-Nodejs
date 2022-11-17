@@ -480,10 +480,30 @@
                           </div>
                         </div>
                         
-
+                        <br>
+                        
+                        <h4 class="mb-3">Payment</h4>
+                        <div class="col-md-8 order-md-1"><div class="d-block my-3">
+                          <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="credit" onclick="toggle('formCredit');">Credit card</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit" onclick="toggle('formDebit');">Debit card</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal" onclick="toggle('formPaypal');">PayPal</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="other" type="radio" class="custom-control-input" disabled>
+                            <label class="custom-control-label">Other (Currently unavailable)</label>
+                          </div>
+                        </div>
+                      </div> 
                     </form>
                     <button class="btn btn-primary btn-lg btn-block" type="submit" form="checkoutForm">Payment Options</button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="toggleOff()">I don't want to pay</button>
                     </div>
                 </div>
             </div>

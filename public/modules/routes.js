@@ -146,6 +146,7 @@ router
                     sessionID: req.body.sessionID,
                     eventName: eventManager.eventName(req.body.eventID),
                     eventDate: eventManager.eventDate(req.body.sessionID),
+                    eventPrice: eventManager.eventPrice(req.body.sessionID),
                     //payment information
                     paymentMethod: "Paypal",
                     paypalEmail: req.body.paypalEmail,
@@ -169,6 +170,7 @@ router
                     sessionID: req.body.sessionID,
                     eventName: eventManager.eventName(req.body.eventID),
                     eventDate: eventManager.eventDate(req.body.sessionID),
+                    eventPrice: eventManager.eventPrice(req.body.sessionID),
                     //payment information
                     paymentMethod: "Credit Card",
                     creditCardName: req.body.creditCardName,
@@ -196,6 +198,7 @@ router
                     sessionID: req.body.sessionID,
                     eventName: eventManager.eventName(req.body.eventID),
                     eventDate: eventManager.eventDate(req.body.sessionID),
+                    eventPrice: eventManager.eventPrice(req.body.sessionID),
                     //payment information
                     paymentMethod: "Debit Card",
                     debitCardName: req.body.debitCardName,

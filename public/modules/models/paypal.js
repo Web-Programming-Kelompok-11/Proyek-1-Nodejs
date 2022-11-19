@@ -11,6 +11,7 @@ const paypalSchema = new mongoose.Schema({
     sessionID: Number,
     eventName: String,
     eventDate: String,
+    eventPrice: Number,
     //payment information
     paymentMethod: String,
     paypalEmail: String,

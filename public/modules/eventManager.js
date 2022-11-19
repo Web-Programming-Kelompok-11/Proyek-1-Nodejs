@@ -1,5 +1,5 @@
 //turn eventID into event name
-function eventName(n) {
+function eventName(eventID) {
         var events = {
             '0': 'Manchester United vs Paris Saint-Germain',
             '1': 'Connor Talkshow',
@@ -16,11 +16,11 @@ function eventName(n) {
             '12': '', //add more events here
             'none': 'ERROR: Event not found'
         };
-        return (events[n] || events['none']);
+        return (events[eventID] || events['none']);
     }
     
     //turn sessionID into event date and time
-    function eventDate(n) {
+    function eventDate(sessionID) {
         var dates = {
             //Manchester United vs Paris Saint-Germain
             '0': '12 Nov 2025 | 9:00 PM - Finish',
@@ -57,10 +57,74 @@ function eventName(n) {
             //add more dates here
             'none': 'ERROR: Date not found'
         };
-        return (dates[n] || dates['none']);
+        return (dates[sessionID] || dates['none']);
+    }
+
+    //price list
+    function eventPrice(sessionID) {
+        var prices = {
+            //Manchester United vs Paris Saint-Germain
+            '0': 816.44,
+            //Connor Talkshow
+            '1': 20.00,
+            //Jimmmy On Tour
+            '2': 25.00,
+            //Markiplier Show
+            '3': 69.69,
+            '4': 69.69,
+            //RRQ VS GPX
+            '5': 5.00,
+            '6': 5.00,
+            //Warriors VS Lakers
+            '7': 99.99,
+            //SUCRD
+            '8': 15.00,
+            //Rick Concert
+            '9': 25.00,
+            '10': 25.00,
+            //Twitch Rivals: Valorant
+            '11': 129.00,
+            '12': 129.00,
+            '13': 129.00,
+            //The Rock VS John Cena
+            '14': 139.99,
+            //Winter Music Festival
+            '15': 30.00,
+            /* these dates have passed
+            //Sword Art Online Progressive
+            '16': 3.59,  
+            '17': 3.92,
+            */
+            //add more prices here
+            'none': 'ERROR: Session not found'
+        };
+        return (prices[sessionID] || prices['none']);
+    }
+
+    //image path - currently unused
+    function eventImage(eventID) {
+        var imagepath = {
+            '0': 'poster-bola.png',
+            '1': 'poster-2.png',
+            '2': 'Poster_Jimmy Yang Redo.png',
+            '3': 'poster-1.png',
+            '4': 'poster-mole.png',
+            '5': 'Poster_NBA.png',
+            '6': 'Poster_Radit.png',
+            '7': 'poster-3.png',
+            '8': 'poster-valorant.gif',
+            '9': 'poster-wwe.gif',
+            '10': 'Poster_Yoasobi.png',
+            '11': 'poster-sao.png',
+            '12': '', //add more images here
+            'default': 'placeholder'
+        };
+        return (imagepath[eventID] || imagepath['default']);
     }
     
     module.exports = {
         eventName,
-        eventDate
+        eventDate,
+        eventImage,
+        eventPrice
     }

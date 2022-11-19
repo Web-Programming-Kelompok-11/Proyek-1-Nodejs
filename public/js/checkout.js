@@ -143,7 +143,7 @@ function toggleCredit(){
   row1input.setAttribute("id", "cc-name");
   row1input.setAttribute("placeholder", "");
   row1input.setAttribute("required", "");
-  row1input.setAttribute("name", "creditCard-name");
+  row1input.setAttribute("name", "creditCardName");
   var row1small = document.createElement("small");
   row1small.setAttribute("class", "text-muted");
   row1small.innerHTML = "Full name as displayed on card";
@@ -167,7 +167,7 @@ function toggleCredit(){
   row1input2.setAttribute("id", "cc-number");
   row1input2.setAttribute("placeholder", "");
   row1input2.setAttribute("required", "");
-  row1input2.setAttribute("name", "creditCard-number");
+  row1input2.setAttribute("name", "creditCardNumber");
   var row1div2 = document.createElement("div");
   row1div2.setAttribute("class", "invalid-feedback");
   row1div2.innerHTML = "Credit card number is required";
@@ -189,7 +189,7 @@ function toggleCredit(){
   row2input.setAttribute("id", "cc-expiration");
   row2input.setAttribute("placeholder", "");
   row2input.setAttribute("required", "");
-  row2input.setAttribute("name", "creditCard-expiration");
+  row2input.setAttribute("name", "creditCardExpiration");
   var row2div = document.createElement("div");
   row2div.setAttribute("class", "invalid-feedback");
   row2div.innerHTML = "Expiration date required";
@@ -209,7 +209,7 @@ function toggleCredit(){
   row2input2.setAttribute("id", "cc-cvv");
   row2input2.setAttribute("placeholder", "");
   row2input2.setAttribute("required", "");
-  row2input2.setAttribute("name", "creditCard-securityCode");
+  row2input2.setAttribute("name", "creditCardCVV");
   var row2div2 = document.createElement("div");
   row2div2.setAttribute("class", "invalid-feedback");
   row2div2.innerHTML = "Security code required";
@@ -247,12 +247,12 @@ function toggleDebit(){
   var row1label = document.createElement("label");
   row1label.innerHTML = "Name on card";
   var row1input = document.createElement("input");
-  row1input.setAttribute("type", "text");
+  row1input.setAttribute("type", "email");
   row1input.setAttribute("class", "form-control");
   row1input.setAttribute("id", "dc-name");
   row1input.setAttribute("placeholder", "");
   row1input.setAttribute("required", "");
-  row1input.setAttribute("name", "debitCard-name");
+  row1input.setAttribute("name", "debitCardName");
   var row1small = document.createElement("small");
   row1small.setAttribute("class", "text-muted");
   row1small.innerHTML = "Full name as displayed on card";
@@ -276,7 +276,7 @@ function toggleDebit(){
   row1input2.setAttribute("id", "dc-number");
   row1input2.setAttribute("placeholder", "");
   row1input2.setAttribute("required", "");
-  row1input2.setAttribute("name", "debitCard-number");
+  row1input2.setAttribute("name", "debitCardNumber");
   var row1div2 = document.createElement("div");
   row1div2.setAttribute("class", "invalid-feedback");
   row1div2.innerHTML = "Debit card number is required";
@@ -298,7 +298,7 @@ function toggleDebit(){
   row2input.setAttribute("id", "dc-expiration");
   row2input.setAttribute("placeholder", "");
   row2input.setAttribute("required", "");
-  row2input.setAttribute("name", "debitCard-expiration");
+  row2input.setAttribute("name", "debitCardExpiration");
   var row2div = document.createElement("div");
   row2div.setAttribute("class", "invalid-feedback");
   row2div.innerHTML = "Expiration date required";
@@ -318,7 +318,7 @@ function toggleDebit(){
   row2input2.setAttribute("id", "dc-cvv");
   row2input2.setAttribute("placeholder", "");
   row2input2.setAttribute("required", "");
-  row2input2.setAttribute("name", "debitCard-securityCode");
+  row2input2.setAttribute("name", "debitCardCVV");
   var row2div2 = document.createElement("div");
   row2div2.setAttribute("class", "invalid-feedback");
   row2div2.innerHTML = "Security code required";
@@ -361,7 +361,7 @@ function togglePaypal(){
   row1input.setAttribute("id", "paypal-email");
   row1input.setAttribute("placeholder", "");
   row1input.setAttribute("required", "");
-  row1input.setAttribute("name", "paypal-email");
+  row1input.setAttribute("name", "paypalEmail");
   var row1small = document.createElement("small");
   row1small.setAttribute("class", "text-muted");
   row1small.innerHTML = "Email address associated with your paypal account";

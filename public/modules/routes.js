@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
-
+//urlencoder
+router.use(express.urlencoded({ extended: true }));
+//json
+router.use(express.json());
 // *** GET Routes - display pages ***
 //General Routes
 // Root Route
@@ -101,19 +104,25 @@ router.get('/buy', function (req, res) {
     res.render('pages/buy/buy-page');
 });
 
-//TODO: MOVE TO POST ROUTES
-//checkout
-router.get('/checkout', function (req, res) {
-    res.render('pages/buy/checkout');
-});
-//payment
-router.get('/payment', function (req, res) {
-    res.render('pages/buy/payment');
-});
-//payment-complete
-//TODO: REMOVE THIS WHEN PAYMENT PAGE WORKS
-router.get('/payment-complete', function (req, res) {
-    res.render('pages/buy/payment-complete');
-});
+//checkout page Route
+router
+    .route('/checkout')
+    .get(function (req, res) {
+        if ((req.query.eventID != null) && (req.query.sessionID != null)) {
+            res.render('pages/buy/checkout');
+        } else {
+            console.log("Error: No eventID or sessionID");
+            res.redirect('/');
+        }
+    })
+    .post(function (req, res) {
+        //make sure that checkout form has payment details
+        if (!(req.body.paypalEmail) || !(req.body.creditCardName) || !(req.body.debitCardName)) {
+            res.render('pages/buy/payment-complete') //payment complete
+        } else {
+            console.log("Error: No payment details");
+            res.redirect('back'); //redirect back to checkout page
+        }
+    });
 
 module.exports = router;

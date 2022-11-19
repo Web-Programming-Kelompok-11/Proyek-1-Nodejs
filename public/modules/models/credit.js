@@ -1,0 +1,21 @@
+const mongoose = require('mongoose');
+
+const creditSchema = new mongoose.Schema({
+    firstName: String,
+    lastName: String,
+    email: String,
+    country: String,
+    shippingAddress: String,
+    paymentMethod: String,
+    eventID: Number,
+    sessionID: Number,
+    eventName: String,
+    eventDate: String,
+    //payment information
+    creditCardName: String,
+    creditCardNumber: String,
+    creditCardExpiration: String,
+    creditCardCVV: String,
+});
+
+module.exports = mongoose.model('Credit', creditSchema);

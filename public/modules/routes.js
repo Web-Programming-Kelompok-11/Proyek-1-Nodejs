@@ -116,8 +116,83 @@ router
         }
     })
     .post(function (req, res) {
+        console.log(req.body);
         //make sure that checkout form has payment details
         if (!(req.body.paypalEmail) || !(req.body.creditCardName) || !(req.body.debitCardName)) {
+                        //send to mongoose
+            if (req.body.paypalEmail != null) {
+                const paypal = new Paypal({
+                    firstName: req.body.firstName,
+                    lastName: req.body.lastName,
+                    email: req.body.email,
+                    country: req.body.country,
+                    shippingAddress: req.body.shippingAddress,
+                    paymentMethod: req.body.paymentMethod,
+                    eventID: req.body.eventID,
+                    sessionID: req.body.sessionID,
+                    eventName: eventManager.eventName(req.body.eventID),
+                    eventDate: eventManager.eventDate(req.body.sessionID),
+                    //payment information
+                    paypalEmail: req.body.paypalEmail,
+                });
+                paypal.save(function (err) {
+                        if (err) {
+                            throw err;
+                        } else {
+                            console.log('Paypal saved successfully!');
+                        }
+                    });
+            } else if (req.body.creditCardName != null) {
+                const credit = new Credit({
+                    firstName: req.body.firstName,
+                    lastName: req.body.lastName,
+                    email: req.body.email,
+                    country: req.body.country,
+                    shippingAddress: req.body.shippingAddress,
+                    paymentMethod: req.body.paymentMethod,
+                    eventID: req.body.eventID,
+                    sessionID: req.body.sessionID,
+                    eventName: eventManager.eventName(req.body.eventID),
+                    eventDate: eventManager.eventDate(req.body.sessionID),
+                    //payment information
+                    creditCardName: req.body.creditCardName,
+                    creditCardNumber: req.body.creditCardNumber,
+                    creditCardExpiration: req.body.creditCardExpiration,
+                    creditCardCVV: req.body.creditCardCVV,
+                });
+                credit.save(function (err) {
+                        if (err) {
+                            throw err;
+                        } else {
+                            console.log('Credit saved successfully!');
+                        }
+                });
+            } else if (req.body.debitCardName != null) {
+                const debit = new Debit({
+                    firstName: req.body.firstName,
+                    lastName: req.body.lastName,
+                    email: req.body.email,
+                    country: req.body.country,
+                    shippingAddress: req.body.shippingAddress,
+                    paymentMethod: req.body.paymentMethod,
+                    eventID: req.body.eventID,
+                    sessionID: req.body.sessionID,
+                    eventName: eventManager.eventName(req.body.eventID),
+                    eventDate: eventManager.eventDate(req.body.sessionID),
+                    //payment information
+                    debitCardName: req.body.debitCardName,
+                    debitCardNumber: req.body.debitCardNumber,
+                    debitCardExpiration: req.body.debitCardExpiration,
+                    debitCardCVV: req.body.debitCardCVV,
+                });
+                debit.save(function (err) {
+                        if (err) {
+                            throw err;
+                        } else {
+                            console.log('Debit saved successfully!');
+                    }
+                });
+            }
             res.render('pages/buy/payment-complete') //payment complete
         } else {
             console.log("Error: No payment details");

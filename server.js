@@ -13,6 +13,8 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 //json
 app.use(express.json());
+//db
+const db = require('./public/modules/models');
 // Port website will run on
 app.listen(port);
 console.log(`listening to port`,port);

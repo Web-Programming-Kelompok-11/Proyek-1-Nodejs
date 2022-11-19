@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const paypalSchema = new mongoose.Schema({
+    submissionTime: String,
     firstName: String,
     lastName: String,
     email: String,

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const debitSchema = new mongoose.Schema({
+    submissionTime: String,
     firstName: String,
     lastName: String,
     email: String,

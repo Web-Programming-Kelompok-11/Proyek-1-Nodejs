@@ -247,7 +247,7 @@ function toggleDebit(){
   var row1label = document.createElement("label");
   row1label.innerHTML = "Name on card";
   var row1input = document.createElement("input");
-  row1input.setAttribute("type", "email");
+  row1input.setAttribute("type", "text");
   row1input.setAttribute("class", "form-control");
   row1input.setAttribute("id", "dc-name");
   row1input.setAttribute("placeholder", "");
@@ -356,7 +356,7 @@ function togglePaypal(){
   var row1label = document.createElement("label");
   row1label.innerHTML = "Paypal Email";
   var row1input = document.createElement("input");
-  row1input.setAttribute("type", "text");
+  row1input.setAttribute("type", "email");
   row1input.setAttribute("class", "form-control");
   row1input.setAttribute("id", "paypal-email");
   row1input.setAttribute("placeholder", "");

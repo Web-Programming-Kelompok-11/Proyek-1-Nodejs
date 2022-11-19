@@ -12,6 +12,12 @@ const Credit = require('./models/credit');
 const Debit = require('./models/debit');
 const Paypal = require('./models/paypal');
 
+//current date and time
+const dateTime = require('node-datetime');
+var dt = dateTime.create();
+var formattedCurrentTime = dt.format('d/m/Y H:M:S');
+console.log(formattedCurrentTime);
+
 // *** GET Routes - display pages ***
 //General Routes
 // Root Route
@@ -130,6 +136,7 @@ router
                         //send to mongoose
             if (req.body.paypalEmail != null) {
                 const paypal = new Paypal({
+                    submissionTime: formattedCurrentTime,
                     firstName: req.body.firstName,
                     lastName: req.body.lastName,
                     email: req.body.email,
@@ -152,6 +159,7 @@ router
                     });
             } else if (req.body.creditCardName != null) {
                 const credit = new Credit({
+                    submissionTime: formattedCurrentTime,
                     firstName: req.body.firstName,
                     lastName: req.body.lastName,
                     email: req.body.email,
@@ -177,6 +185,7 @@ router
                 });
             } else if (req.body.debitCardName != null) {
                 const debit = new Debit({
+                    submissionTime: formattedCurrentTime,
                     firstName: req.body.firstName,
                     lastName: req.body.lastName,
                     email: req.body.email,

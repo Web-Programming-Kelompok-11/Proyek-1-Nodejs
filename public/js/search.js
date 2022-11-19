@@ -1,7 +1,7 @@
 //extracting GET parameter from URL
 function getUrlVars() {
-    var vars = {***REMOVED***
-    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {         vars[key] = value;     ***REMOVED***
+    var vars = {};
+    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {         vars[key] = value;     });
     return vars;
 }
 var searchVar = getUrlVars()["search"];
@@ -27,9 +27,3 @@ function search(getparm) {
           emptyCounter = emptyCounter+1;
         }
       }
-
-    if (emptyCounter == li.length) {
-      var emptyContainer = document.getElementsByClassName("displayEmpty");
-      emptyContainer[0].className = emptyContainer[0].className.replace(" displayEmpty", "");
-    }
-}

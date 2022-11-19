@@ -65,7 +65,7 @@ if(findGetParameter("sessionID")) { // Check if parameter matches
 window.onload = (event) => {
  addTicketToForm();
  resetForm();
-***REMOVED***
+};
 
 //reset form
 function resetForm() {

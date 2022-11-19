@@ -27,3 +27,9 @@ function search(getparm) {
           emptyCounter = emptyCounter+1;
         }
       }
+      
+    if (emptyCounter == li.length) {
+        var emptyContainer = document.getElementsByClassName("displayEmpty");
+        emptyContainer[0].className = emptyContainer[0].className.replace(" displayEmpty", "");
+      }
+  }

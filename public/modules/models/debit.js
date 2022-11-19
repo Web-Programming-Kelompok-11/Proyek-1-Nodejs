@@ -6,12 +6,12 @@ const debitSchema = new mongoose.Schema({
     email: String,
     country: String,
     shippingAddress: String,
-    paymentMethod: String,
     eventID: Number,
     sessionID: Number,
     eventName: String,
     eventDate: String,
     //payment information
+    paymentMethod: String,
     debitCardName: String,
     debitCardNumber: String,
     debitCardExpiration: String,

@@ -6,12 +6,12 @@ const creditSchema = new mongoose.Schema({
     email: String,
     country: String,
     shippingAddress: String,
-    paymentMethod: String,
     eventID: Number,
     sessionID: Number,
     eventName: String,
     eventDate: String,
     //payment information
+    paymentMethod: String,
     creditCardName: String,
     creditCardNumber: String,
     creditCardExpiration: String,

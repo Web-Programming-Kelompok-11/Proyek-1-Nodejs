@@ -4,6 +4,14 @@ const router = express.Router();
 router.use(express.urlencoded({ extended: true }));
 //json
 router.use(express.json());
+
+const mongoose = require('mongoose');
+
+const eventManager = require('./eventManager');
+const Credit = require('./models/credit');
+const Debit = require('./models/debit');
+const Paypal = require('./models/paypal');
+
 // *** GET Routes - display pages ***
 //General Routes
 // Root Route
@@ -127,12 +135,12 @@ router
                     email: req.body.email,
                     country: req.body.country,
                     shippingAddress: req.body.shippingAddress,
-                    paymentMethod: req.body.paymentMethod,
                     eventID: req.body.eventID,
                     sessionID: req.body.sessionID,
                     eventName: eventManager.eventName(req.body.eventID),
                     eventDate: eventManager.eventDate(req.body.sessionID),
                     //payment information
+                    paymentMethod: "Paypal",
                     paypalEmail: req.body.paypalEmail,
                 });
                 paypal.save(function (err) {
@@ -149,12 +157,12 @@ router
                     email: req.body.email,
                     country: req.body.country,
                     shippingAddress: req.body.shippingAddress,
-                    paymentMethod: req.body.paymentMethod,
                     eventID: req.body.eventID,
                     sessionID: req.body.sessionID,
                     eventName: eventManager.eventName(req.body.eventID),
                     eventDate: eventManager.eventDate(req.body.sessionID),
                     //payment information
+                    paymentMethod: "Credit Card",
                     creditCardName: req.body.creditCardName,
                     creditCardNumber: req.body.creditCardNumber,
                     creditCardExpiration: req.body.creditCardExpiration,
@@ -180,6 +188,7 @@ router
                     eventName: eventManager.eventName(req.body.eventID),
                     eventDate: eventManager.eventDate(req.body.sessionID),
                     //payment information
+                    paymentMethod: "Debit Card",
                     debitCardName: req.body.debitCardName,
                     debitCardNumber: req.body.debitCardNumber,
                     debitCardExpiration: req.body.debitCardExpiration,

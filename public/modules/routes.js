@@ -122,10 +122,10 @@ router.get('/buy', function (req, res) {
 router
     .route('/checkout')
     .get(function (req, res) {
-        if ((req.query.eventID != null) && (req.query.sessionID != null)) {
+        if (((req.query.eventID != null) && (req.query.sessionID != null)) && (eventManager.IDResolver(req.query.sessionID, req.query.eventID))) {
             res.render('pages/buy/checkout');
         } else {
-            console.log("Error: No eventID or sessionID");
+            console.log("Error: No matching eventID or sessionID");
             res.redirect('/');
         }
     })

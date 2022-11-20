@@ -100,6 +100,47 @@ function eventName(eventID) {
         };
         return (prices[sessionID] || prices['none']);
     }
+    
+
+    //EventID & SessionID resolver
+    function IDResolver(sessionID, eventID) {
+        var eventIDList = {
+            //Manchester United vs Paris Saint-Germain
+            0: 0,
+            //Connor Talkshow
+            1: 1,
+            //Jimmmy On Tour
+            2: 2,
+            //Markiplier Show
+            3: 3,
+            4: 3,
+            //RRQ VS GPX
+            5: 4,
+            6: 4,
+            //Warriors VS Lakers
+            7: 5,
+            //SUCRD
+            8: 6,
+            //Rick Concert
+            9: 7,
+            10: 7,
+            //Twitch Rivals: Valorant
+            11: 8,
+            12: 8,
+            13: 8,
+            //The Rock VS John Cena
+            14: 9,
+            //Winter Music Festival
+            15: 10,
+            //Sword Art Online Progressive
+            16: 11,  
+            17: 11,
+            //add more IDs here
+        };
+        if (eventIDList[sessionID] == eventID) {
+            return true;
+        } else return false;
+    }
 
     //image path - currently unused
     function eventImage(eventID) {
@@ -126,5 +167,6 @@ function eventName(eventID) {
         eventName,
         eventDate,
         eventImage,
-        eventPrice
+        eventPrice,
+        IDResolver
     }

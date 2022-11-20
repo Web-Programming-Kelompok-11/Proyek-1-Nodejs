@@ -4,9 +4,11 @@ const Paypal = require('./paypal');
 const Credit = require('./credit');
 const Debit = require('./debit');
 
-const connectionString = require('./connectionString');
+const config = require('../config');
 
-mongoose.connect(connectionString.conStr);
+const connectionString = `${config.db}`;
+
+mongoose.connect(connectionString);
 
 const db = mongoose.connection;
 

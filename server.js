@@ -2,7 +2,8 @@
 var express = require('express');
 const ejs = require('ejs');
 //website port
-const port = 8080; // || other port
+const config = require('./public/modules/config');
+const port = config.port; //
 // Initialise Express
 var app = express();
 // Render static files

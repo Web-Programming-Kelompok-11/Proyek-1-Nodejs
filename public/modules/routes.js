@@ -16,7 +16,7 @@ const Paypal = require('./models/paypal');
 const dateTime = require('node-datetime');
 var dt = dateTime.create();
 var formattedCurrentTime = dt.format('d/m/Y H:M:S');
-console.log(formattedCurrentTime);
+console.log(`Started at `+formattedCurrentTime);
 
 // *** GET Routes - display pages ***
 //General Routes
@@ -122,6 +122,7 @@ router.get('/buy', function (req, res) {
 router
     .route('/checkout')
     .get(function (req, res) {
+        //make sure there is an event with the corresponding date
         if (((req.query.eventID != null) && (req.query.sessionID != null)) && (eventManager.IDResolver(req.query.sessionID, req.query.eventID))) {
             res.render('pages/buy/checkout');
         } else {
@@ -155,7 +156,7 @@ router
                         if (err) {
                             throw err;
                         } else {
-                            console.log('Paypal saved successfully!');
+                            console.log(formattedCurrentTime + ` - ${req.body.firstName} ${req.body.lastName} Paypal payment submitted successfully!`);
                         }
                     });
             } else if (req.body.creditCardName != null) {
@@ -182,7 +183,7 @@ router
                         if (err) {
                             throw err;
                         } else {
-                            console.log('Credit saved successfully!');
+                            console.log(formattedCurrentTime + ` - ${req.body.firstName} ${req.body.lastName} Credit payment submitted successfully!`);
                         }
                 });
             } else if (req.body.debitCardName != null) {
@@ -210,7 +211,7 @@ router
                         if (err) {
                             throw err;
                         } else {
-                            console.log('Debit saved successfully!');
+                            console.log(formattedCurrentTime + ` - ${req.body.firstName} ${req.body.lastName} Debit payment submitted successfully!`);
                     }
                 });
             }

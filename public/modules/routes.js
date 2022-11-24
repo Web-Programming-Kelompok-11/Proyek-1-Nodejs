@@ -4,6 +4,7 @@ const router = express.Router();
 router.use(express.urlencoded({ extended: true }));
 //json
 router.use(express.json());
+const {check, validationResult} = require('express-validator');
 
 const mongoose = require('mongoose');
 
@@ -130,11 +131,33 @@ router
             res.redirect('/');
         }
     })
-    .post(function (req, res) {
-        console.log(req.body);
-        //make sure that checkout form has payment details
-        if (!(req.body.paypalEmail) || !(req.body.creditCardName) || !(req.body.debitCardName)) {
-                        //send to mongoose
+    .post([
+        check('firstName').not().isEmpty().isLength({ min: 1 }).trim().escape(),
+        check('lastName').optional().trim().escape(),
+        check('email').not().isEmpty().isEmail().normalizeEmail().trim().escape(),
+        check('country').not().isEmpty().isLength({ min: 2 }).trim().escape(),
+        check('shippingAddress').not().isEmpty().isLength({ min: 1 }).trim().escape(),
+        check('paymentMethod').not().isEmpty().trim().escape(),
+        check('eventID').not().isEmpty(),
+        check('sessionID').not().isEmpty(),
+        check('paypalEmail').optional().isEmail().normalizeEmail().trim().escape(),
+        check('debitCardName').optional().isLength({ min: 1 }).trim().escape(),
+        check('debitCardNumber').optional().isCreditCard().trim().escape(),
+        check('debitCardExpiration').optional().isLength({ min: 1 }).trim().escape(),
+        check('debitCardCVV').optional().isLength({ min: 1 }).trim().escape(),
+        check('creditCardName').optional().isLength({ min: 1 }).trim().escape(),
+        check('creditCardNumber').optional().isCreditCard().trim().escape(),
+        check('creditCardExpiration').optional().isLength({ min: 1 }).trim().escape(),
+        check('creditCardCVV').optional().isLength({ min: 1 }).trim().escape(),
+    ], function (req, res) {
+        console.log(req.body); //for debugging; remove in production
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) { //make sure form has no errors
+            console.log(errors); //for debugging; remove in production
+            res.render('pages/buy/checkout', { errors: errors.array() });
+        } else { //make sure that checkout form has payment details
+        if (!(req.body.paypalEmail) || !((req.body.creditCardName) && (req.body.creditCardNumber) && (req.body.creditCardExpiration) && (req.body.creditCardCVV)) || !((req.body.debitCardName) && (req.body.debitCardNumber) && (req.body.debitCardExpiration) && (req.body.debitCardCVV))) {
+            //send to mongoose
             if (req.body.paypalEmail != null) {
                 const paypal = new Paypal({
                     submissionTime: formattedCurrentTime,
@@ -219,7 +242,7 @@ router
         } else {
             console.log("Error: No payment details");
             res.redirect('back'); //redirect back to checkout page
-        }
+        }}
     });
 
 module.exports = router;

@@ -153,6 +153,10 @@ router
         check('creditCardCVV').optional().isLength({ min: 1 }).trim().escape(),
     ], function (req, res) {
         console.log(req.body); //for debugging; remove in production
+        var email = req.body.email;
+        var firstName = req.body.firstName;
+        var eventID = req.body.eventID;
+        var sessionID = req.body.sessionID;
         const errors = validationResult(req);
         if (!errors.isEmpty()) { //make sure form has no errors
             console.log(errors); //for debugging; remove in production
@@ -247,11 +251,17 @@ router
                 to: req.body.email,
                 subject: 'ShowFinder - Your Ticket is Here!',
                 text: 'Thanks for using ShowFinder! Here is your ticket for the event you have booked. Enjoy the show!',
-                html: `<b>Hello ${req.body.firstName}! </b><br> <img src="${eventManager.eventImage(req.body.eventID)}" alt="ticket image" /> Thank you for purchasing ${eventManager.eventName(req.body.eventID)}<br /><img src="${eventManager.ticketImage(req.body.sessionID)}" alt="ticket image" />`,
+                html: `<b>Hello ${firstName}! </b><br> <img src="cid:poster" alt="poster image"> Thank you for purchasing tickets for ${eventManager.eventName(eventID)}!<br /><img src="cid:ticket" alt="ticket image">`,
                 attachments: [
                   {
-                    filename: eventManager.ticketImage(req.body.sessionID),
-                    path: '../img/' + eventManager.ticketImage(req.body.sessionID),
+                    filename: 'ticket.png',
+                    path: './public/img/' + eventManager.ticketImage(sessionID),
+                    cid: 'ticket'
+                  },
+                  {
+                    filename: 'poster.png',
+                    path: './public/img/' + eventManager.eventImage(eventID),
+                    cid: 'poster'
                   }
                 ]
             };
@@ -260,7 +270,7 @@ router
                 if (err) {
                   console.log("Error " + err);
                 } else {
-                  console.log(`${req.body.firstName} - email sent successfully`);
+                  console.log(`${firstName} - email sent successfully`);
                 }
             });
         } else {

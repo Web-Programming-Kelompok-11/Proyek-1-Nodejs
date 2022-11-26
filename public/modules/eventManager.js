@@ -201,7 +201,7 @@ function eventName(eventID) {
             //add more prices here
             'none': 'placeholder'
         };
-        return (imagepath[eventID] || imagepath['default']);
+        return (imagepath[sessionID] || imagepath['default']);
     }
     
     module.exports = {

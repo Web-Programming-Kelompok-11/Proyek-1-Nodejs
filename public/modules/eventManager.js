@@ -142,7 +142,7 @@ function eventName(eventID) {
         } else return false;
     }
 
-    //image path - currently unused
+    //image path - poster
     function eventImage(eventID) {
         var imagepath = {
             '0': 'poster-bola.png',
@@ -162,11 +162,53 @@ function eventName(eventID) {
         };
         return (imagepath[eventID] || imagepath['default']);
     }
+
+    //image path - ticket
+    function ticketImage(sessionID) {
+        var imagepath = {
+            //Manchester United vs Paris Saint-Germain
+            '0': 'ticket-0.png',
+            //Connor Talkshow
+            '1': 'ticket-1.png',
+            //Jimmmy On Tour
+            '2': 'ticket-2.png',
+            //Markiplier Show
+            '3': 'ticket-3.png',
+            '4': 'ticket-4.png',
+            //RRQ VS GPX
+            '5': 'ticket-5.png',
+            '6': 'ticket-6.png',
+            //Warriors VS Lakers
+            '7': 'ticket-7.png',
+            //SUCRD
+            '8': 'ticket-8.png',
+            //Rick Concert
+            '9': 'ticket-9.png',
+            '10': 'ticket-10.png',
+            //Twitch Rivals: Valorant
+            '11': 'ticket-11.png',
+            '12': 'ticket-12.png',
+            '13': 'ticket-13.png',
+            //The Rock VS John Cena
+            '14': 'ticket-14.png',
+            //Winter Music Festival
+            '15': 'ticket-15.png',
+            /* these dates have passed
+            //Sword Art Online Progressive
+            '16': 'ticket-16.png',  
+            '17': 'ticket-17.png',
+            */
+            //add more prices here
+            'none': 'placeholder'
+        };
+        return (imagepath[eventID] || imagepath['default']);
+    }
     
     module.exports = {
         eventName,
         eventDate,
         eventImage,
+        ticketImage,
         eventPrice,
         IDResolver
     }

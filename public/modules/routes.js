@@ -5,6 +5,8 @@ router.use(express.urlencoded({ extended: true }));
 //json
 router.use(express.json());
 const {check, validationResult} = require('express-validator');
+//email
+const { transporter } = require('./mailManager');
 
 const mongoose = require('mongoose');
 
@@ -239,6 +241,28 @@ router
                 });
             }
             res.render('pages/buy/payment-complete') //payment complete
+            //email
+            let mailOptions = {
+                from: 'showfinder.kelompok11@gmail.com',
+                to: req.body.email,
+                subject: 'ShowFinder - Your Ticket is Here!',
+                text: 'Thanks for using ShowFinder! Here is your ticket for the event you have booked. Enjoy the show!',
+                html: `<b>Hello ${req.body.firstName}! </b><br> <img src="${eventManager.eventImage(req.body.eventID)}" alt="ticket image" /> Thank you for purchasing ${eventManager.eventName(req.body.eventID)}<br /><img src="${eventManager.ticketImage(req.body.sessionID)}" alt="ticket image" />`,
+                attachments: [
+                  {
+                    filename: eventManager.ticketImage(req.body.sessionID),
+                    path: '../img/' + eventManager.ticketImage(req.body.sessionID),
+                  }
+                ]
+            };
+            //send it
+            transporter.sendMail(mailOptions, function(err, data) {
+                if (err) {
+                  console.log("Error " + err);
+                } else {
+                  console.log(`${req.body.firstName} - email sent successfully`);
+                }
+            });
         } else {
             console.log("Error: No payment details");
             res.redirect('back'); //redirect back to checkout page

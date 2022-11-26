@@ -10,4 +10,10 @@ if (envFound.error) {
 module.exports = {
   port: process.env.PORT || 8080,
   db: process.env.MONGODB_URI,
+  mail_username: process.env.mail_email,
+  mail_password: process.env.mail_password,
+  accessToken: process.env.oauth_accessToken,
+  refreshToken: process.env.oauth_refreshToken,
+  clientID: process.env.client_id,
+  clientSecret: process.env.client_secret,
 };

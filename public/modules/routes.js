@@ -251,7 +251,7 @@ router
                 to: req.body.email,
                 subject: 'ShowFinder - Your Ticket is Here!',
                 text: 'Thanks for using ShowFinder! Here is your ticket for the event you have booked. Enjoy the show!',
-                html: `<b>Hello ${firstName}! </b><br> <img src="cid:poster" alt="poster image"> Thank you for purchasing tickets for ${eventManager.eventName(eventID)}!<br /><img src="cid:ticket" alt="ticket image">`,
+                html: `<b>Hello ${firstName}! </b><br><br> <img src="cid:poster" alt="poster image"> <br><br>Thank you for purchasing tickets for ${eventManager.eventName(eventID)}!<br><br><img src="cid:ticket" alt="ticket image"><br><br>Hope you enjoy your show!<br><br>Kind regards,<br><br><br>ShowFinder Team & Kelompok 11`,
                 attachments: [
                   {
                     filename: 'ticket.png',
@@ -268,7 +268,7 @@ router
             //send it
             transporter.sendMail(mailOptions, function(err, data) {
                 if (err) {
-                  console.log("Error " + err);
+                  console.log(err);
                 } else {
                   console.log(`${firstName} - email sent successfully`);
                 }

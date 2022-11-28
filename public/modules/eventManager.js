@@ -13,7 +13,7 @@ function eventName(eventID) {
             '9': 'The Rock VS John Cena',
             '10': 'Winter Music Festival',
             '11': 'Sword Art Online Progressive',
-            '12': '', //add more events here
+            //'12': '', //add more events here
             'none': 'ERROR: Event not found'
         };
         return (events[eventID] || events['none']);
@@ -157,10 +157,10 @@ function eventName(eventID) {
             '9': 'poster-wwe.gif',
             '10': 'Poster_Yoasobi.png',
             '11': 'poster-sao.png',
-            '12': '', //add more images here
-            'default': 'placeholder'
+            //'12': 'placeholder.png', //add more images here
+            'none': 'placeholder.png'
         };
-        return (imagepath[eventID] || imagepath['default']);
+        return (imagepath[eventID] || imagepath['none']);
     }
 
     //image path - ticket
@@ -169,21 +169,21 @@ function eventName(eventID) {
             //Manchester United vs Paris Saint-Germain
             '0': 'ticket-0.png',
             //Connor Talkshow
-            '1': 'ticket-1.png',
+            '1': 'ticket-2.png',
             //Jimmmy On Tour
-            '2': 'ticket-2.png',
+            '2': 'ticket-4.png',
             //Markiplier Show
-            '3': 'ticket-3.png',
-            '4': 'ticket-4.png',
+            '3': 'ticket-1.jpg',
+            '4': 'ticket-5.png',
             //RRQ VS GPX
-            '5': 'ticket-5.png',
-            '6': 'ticket-6.png',
+            '5': 'ticket-6.png',
+            '6': 'ticket-7.png',
             //Warriors VS Lakers
-            '7': 'ticket-7.png',
+            '7': 'ticket-8.png',
             //SUCRD
-            '8': 'ticket-8.png',
+            '8': 'ticket-9.png',
             //Rick Concert
-            '9': 'ticket-9.png',
+            '9': 'ticket-3.png',
             '10': 'ticket-10.png',
             //Twitch Rivals: Valorant
             '11': 'ticket-11.png',
@@ -199,9 +199,9 @@ function eventName(eventID) {
             '17': 'ticket-17.png',
             */
             //add more prices here
-            'none': 'placeholder'
+            'none': 'placeholder.png'
         };
-        return (imagepath[sessionID] || imagepath['default']);
+        return (imagepath[sessionID] || imagepath['none']);
     }
     
     module.exports = {

@@ -251,7 +251,7 @@ router
                 to: req.body.email,
                 subject: 'ShowFinder - Your Ticket is Here!',
                 text: 'Thanks for using ShowFinder! Here is your ticket for the event you have booked. Enjoy the show!',
-                html: `<b>Hello ${firstName}! </b><br><br> <img src="cid:poster" alt="poster image"> <br><br>Thank you for purchasing tickets for ${eventManager.eventName(eventID)}!<br><br><img src="cid:ticket" alt="ticket image"><br><br>Hope you enjoy your show!<br><br>Kind regards,<br><br><br>ShowFinder Team & Kelompok 11`,
+                html: `<b>Hello ${firstName}! </b><br><br> <img src="cid:poster" alt="poster image" width="600px" height="800px"> <br><br>Thank you for purchasing tickets for ${eventManager.eventName(eventID)}. Be sure to mark ${eventManager.eventDate(sessionID)} on your calendar!<br><br><img src="cid:ticket" alt="ticket image" width="600px" height="194px"><br><br>Hope you enjoy your show!<br><br>Kind regards,<br><br><br>ShowFinder Team & Kelompok 11`,
                 attachments: [
                   {
                     filename: 'ticket.png',

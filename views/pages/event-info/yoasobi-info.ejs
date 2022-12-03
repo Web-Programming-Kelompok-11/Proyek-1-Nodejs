@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Winter Music Festival | ShowFinder</title>
+        <%- include('../../partials/_head.ejs') %>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <%- include('../../partials/_nav.ejs') %>
+        </nav>
+
+            <div class="container-fluid padding">
+                <div class="row py-3">
+                    <!-- sticky sidebar -->
+                    <div class="col-sm-4 col-lg-4 order-2 mx-1" id="sticky-sidebar">
+                        <div class="sticky-top">
+                            <div class="nav flex-column">
+                                <h3 class="info-sidebar-title">Winter Music Festival</h3>
+                                <p class="info-sub-text">By Yoasobi</p>
+                                <p class="info-place-text">CITY</p>
+                                <span class="info-sub-text">Tokyo, JP</span>
+                                <hr class="divider-sidebar">
+                                <span class="info-main-text">Location</span>
+                                <span class="info-sub-text">2 Chome-1-6 Ariake, Koto City, Tokyo 135-0063, JP</span>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Schedule</p>
+                                <span class="info-sub-text">16 Dec 2023</span>
+                                <hr class="divider-sidebar">
+                                <span class="info-main-text" id="price-text">PRICE</span>
+                                <h6 id="price-amount">$30.00</h6>
+                                <a href="/buy?item=10">
+                                    <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button">Buy Tickets</button> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main -->
+                    <div class="col" id="info-main">
+                        <p id="info-type">Music</p>
+                        <h1 class="display-4" id="info-title-text">Winter Music Festival</h1>
+                        <!--image -->
+                        <img src="../img/Poster_Yoasobi.png" alt="Yoasobi" class="img-fluid" id="info-poster-main-img">
+                        <hr class="divider-invisible">
+                        <!-- show desc. -->
+                        <h3 class="info-subheading-text">Description</h3>
+                        <p class="info-main-text">A Winter Wonderland! Yoasobi will guest in Tokyo's Winter Music Festival, 16 Dec 2023. Don't miss out!</p>
+                        <hr class="divider-main">
+                        <h3 class="info-subheading-text">Location</h3>
+                        <h6 class="info-place-text">Tokyo</h6>
+                        <p class="info-sub-text">2 Chome-1-6 Ariake, Koto City, Tokyo 135-0063, JP</p>
+                        <h3 class="info-subheading-text">Location Description</h3>
+                        <p class="info-sub-text">Tokyo Garden Theater, The multi-purpose event hall such as for concert, musical, international conference, e-sports, party, exhibition</p>
+                        <div class="google-map-link"><a class="Location__StyledAnchor-hveuoR acHWG Anchor__Anchor-goxHTO bxuGhH" href="https://www.google.com/maps/place/Tokyo+Garden+Theater/@35.6377635,139.7898257,17z/data=!3m2!4b1!5s0x601889ea40ea922d:0x3257ceb323a9565!4m5!3m4!1s0x601889da3e5d6cbb:0xd5bdadb43d76174b!8m2!3d35.6377592!4d139.7920197?hl=en-US" target="_blank" rel="noopener noreferrer">View in Google Map</a></div>
+                        <div class="col-md-12">
+                            <div id="map-container-google" class="z-depth-1-half map-container-2">
+                            <iframe src="https://maps.google.com/maps?q=tokyo%20garden%20theater&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                              style="border:0" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- schedules for show -->
+                        <h3 class="info-subheading-text">Schedules</h3>
+                        <div class="row">
+                            <div class="col" id="info-date">
+                                <h6 class="info-place-text">Saturday - 16.12.2023</h6>
+                            </div>
+                            <div class="col" id="info-time">
+                                <h6 class="info-sub-text">7:30 PM - 9:00 PM</h6>
+                            </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- creator/artist/etc. -->
+                        <h3 class="info-subheading-text">Creator</h3>
+                        <div class="row">
+                            <div class="col" id="logo">
+                                <img src="../img/yoasobi.jpeg" alt="Yoasobi" class="img-fluid" id="creator-image">
+                            </div>
+                            <div class="col" id="info-creator">
+                                <h4 class="info-subheading-text">Yoasobi</h6>
+                                <p class="info-sub-text">Yoasobi is a Japanese music superduo formed by Sony Music Entertainment Japan, composed of Vocaloid producer Ayase, and singer-songwriter Ikura. Represented by the slogan "novel into music", the duo has released songs based on novels posted on Monogatary.com, a novel-centered social media operated by their label, which is also from various media like novels written by professional authors, books, and letters.</p>
+                            </div>
+                        </div>
+                        <!-- disclaimer -->
+                        <div class="row" id="info-disclaimer">
+                            <i data-feather="alert-circle" style="color: #ff1c1c"></i>
+                        <div class="col" id="info-disclaimer-text">
+                            <p class="info-sub-text">Photos, description, location, and schedules are posted by the organizer. ShowFinder is not responsible for any inaccuracy</p>
+                        </div>
+                    </div>
+                        <hr class="divider-invisible">
+                    </div> 
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+    </body>
+</html>

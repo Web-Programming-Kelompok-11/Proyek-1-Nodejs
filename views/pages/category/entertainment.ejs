@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entertainment | ShowFinder</title>
+        <%- include('../../partials/_head.ejs') %>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <%- include('../../partials/_nav.ejs') %>
+        </nav>
+
+            <!-- title -->
+            <div class="container-fluid padding">
+                <div class="row welcome text-center">
+                    <div class="col-12">
+                        <h1 id="display-4-entertainment">Entertainment</h1>
+                    </div>
+                    <hr class="divider1">
+                </div>
+            </div>
+
+            <hr class="divider1">
+
+            <!-- Main -->
+            <div class="container-fluid padding">
+                <div class="row padding px-5">
+                    <div class="col-md">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <span class="text-dark">Featured</span>
+                            </div>
+                            <a href="/events/radit-sucrd">
+                                <img class="card-img-top" src="../img/Poster_Radit.png">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">SUCRD</h4>
+                                <p class="card-text">Raditya Dika</p>
+                                <a href="/events/radit-sucrd" class="btn btn-outline-secondary">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="text-dark">Top Seller</span>
+                            </div>
+                            <a href="/events/sao-progressive-movie">
+                                <img class="card-img-top" src="../img/poster-sao.png">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">SAO Progressive: Aria of a Starless Night</h4>
+                                <p class="card-text">Ayako Kōno</p>
+                                <a href="/events/sao-progressive-movie" class="btn btn-outline-secondary">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider1">
+
+            <div class="container-fluid padding">
+                <div class="row padding px-5">
+                    <div class="col-md">
+                        <div class="card mb-3">
+                            <a href="/events/jimmy-on-tour">
+                                <img class="card-img-top" src="../img/Poster_Jimmy Yang Redo.png">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">Jimmy On Tour</h4>
+                                <p class="card-text">Jimmy O. Yang</p>
+                                <a href="/events/jimmy-on-tour" class="btn btn-outline-secondary">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md">
+                        <div class="card">
+                            <a href="/events/wwe-rock-v-cena">
+                                <img class="card-img-top" src="../img/poster-wwe.gif">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">The Rock VS John Cena</h4>
+                                <p class="card-text">WWE</p>
+                                <a href="/events/wwe-rock-v-cena" class="btn btn-outline-secondary">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider1">
+
+            <!-- pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                        <i class="feather-20" data-feather="chevrons-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="/category/entertainment?page=2">2</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="/category/entertainment?page=2">
+                        <i class="feather-20" data-feather="chevrons-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+            <!-- footer -->
+            <footer>
+                <%- include('../../partials/_footer.ejs') %>
+            </footer>
+            
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+    </body>
+</html>

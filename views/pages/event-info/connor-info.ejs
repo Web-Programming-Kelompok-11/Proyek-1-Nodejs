@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connor Talkshow Live | ShowFinder</title>
+        <%- include('../../partials/_head.ejs') %>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <%- include('../../partials/_nav.ejs') %>
+        </nav>
+
+            <div class="container-fluid padding">
+                <div class="row py-3">
+                    <!-- sticky sidebar -->
+                    <div class="col-sm-4 col-lg-4 order-2 mx-1" id="sticky-sidebar">
+                        <div class="sticky-top">
+                            <div class="nav flex-column" style="padding-top: 4vw;">
+                                <h3 class="info-sidebar-title">Connor Talkshow</h3>
+                                <p class="info-sub-text">By Connor</p>
+                                <p class="info-place-text">CITY</p>
+                                <p class="info-sub-text">Tokyo, Japan</p>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Location</p>
+                                <span class="info-sub-text" style="margin-bottom: -15px;">No. 100-0005 Tokyo, Chiyoda City, Marunouchi, 3 Chome-2-3 Floor 5 and 6</span>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text">Schedule</p>
+                                <p class="info-sub-text">10 Dec 2077</p>
+                                <hr class="divider-sidebar">
+                                <p class="info-main-text" id="price-text">PRICE</p>
+                                <h6 id="price-amount">$20.00</h6>
+                                <a href="/buy?item=1">
+                                    <button type="button" class="btn btn-primary btn-lg" id="buy-ticket-button">Buy Tickets</button> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main -->
+                    <div class="col" id="info-main">
+                        <p id="info-type">Entertainment</p>
+                        <h1 class="display-4" id="info-title-text">Connor Talkshow</h1>
+                        <!--image -->
+                        <img src="../img/poster-2.png" alt="Connor" class="img-fluid" id="info-poster-main-img">
+                        <hr class="divider-invisible">
+                        <!-- show desc. -->
+                        <h3 class="info-subheading-text">Description</h3>
+                        <p class="info-main-text">Co-host of 'Trash Taste Podcast' comes at you live with a solo talkshow! Book now for a fun night of good music, good fun, and marginally better taste.</p>
+                        <hr class="divider-main">
+                        <h3 class="info-subheading-text">Location</h3>
+                        <h6 class="info-place-text">Japan</h6>
+                        <p class="info-sub-text"> No. 100-0005 Tokyo, Chiyoda City, Marunouchi, 3 Chome-2-3 Floor 5 and 6</p>
+                        <h3 class="info-subheading-text">Location Description</h3>
+                        <p class="info-sub-text">Foreign Correspondents' Club of Japan</p>
+                        <div class="google-map-link"><a class="Location__StyledAnchor-hveuoR acHWG Anchor__Anchor-goxHTO bxuGhH" href="https://www.google.co.id/maps/place/Foreign+Correspondents’+Club+of+Japan/@35.6780788,139.7597143,17z/data=!3m2!4b1!5s0x60188bf092d78f21:0xbf55003c1f39b975!4m5!3m4!1s0x60188b8471483c75:0xa28377387ff70de4!8m2!3d35.6780788!4d139.761903?hl=id" target="_blank" rel="noopener noreferrer">View in Google Map</a></div>
+                        <div class="col-md-12">
+                            <div id="map-container-google" class="z-depth-1-half map-container-2">
+                            <iframe src="https://maps.google.com/maps?q=Foreign%20Correspondents%27%20Club%20of%20Japan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                              style="border:0" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- schedules for show -->
+                        <h3 class="info-subheading-text">Schedules</h3>
+                        <div class="row">
+                            <div class="col" id="info-date">
+                                <h6 class="info-place-text">Saturday - 10.12.2077</h6>
+                            </div>
+                            <div class="col" id="info-time">
+                                <h6 class="info-sub-text">8:30 PM - 10:00 PM</h6>
+                            </div>
+                        </div>
+                        <hr class="divider-main">
+                        <!-- creator/artist/etc. -->
+                        <h3 class="info-subheading-text">Creator</h3>
+                        <div class="row">
+                            <div class="col" id="logo">
+                                <img src="../img/cdawgva.jpg" alt="CDawgVA" class="img-fluid">
+                            </div>
+                            <div class="col" id="info-creator">
+                                <h4 class="info-subheading-text">CDawgVA</h6>
+                                <p class="info-sub-text">Connor Marc Colquhoun (born 26 July 1996), known online as CDawgVA, is a Welsh YouTuber and voice actor based in Tokyo. He is affiliated with the Kadokawa-backed agency GeeXPlus. In February 2020, Colquhoun joined Joey Bizinger (The Anime Man) and Garnt Maneetapho (Gigguk) in creating and hosting a weekly podcast called Trash Taste, where they discuss anime, manga, otaku culture, and their experiences while living in Japan.<p>
+                            </div>
+                        </div>
+                        <!-- disclaimer -->
+                        <div class="row" id="info-disclaimer">
+                            <i data-feather="alert-circle" style="color: #ff1c1c"></i>
+                        <div class="col" id="info-disclaimer-text">
+                            <p class="info-sub-text">Photos, description, location, and schedules are posted by the organizer. ShowFinder is not responsible for any inaccuracy</p>
+                        </div>
+                    </div>
+                        <hr class="divider-invisible">
+                    </div> 
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+    </body>
+</html>

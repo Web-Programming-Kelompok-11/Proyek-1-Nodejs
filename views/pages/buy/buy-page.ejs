@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select Tickets | ShowFinder</title>
+        <%- include('../../partials/_head.ejs') %>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <%- include('../../partials/_nav.ejs') %>
+        </nav>
+
+            <!-- title -->
+            <div class="container padding tickets-title">
+                <div class="container-fluid padding">
+                    <h1 class="info-subheading-text">Buy Tickets</h1>
+                </div>
+            </div>
+
+            <!-- 0 - bola -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Manchester United VS Paris Saint-Germain</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">12 Nov 2025</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=0&sessionID=0" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Game Day Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">12 Nov 2025 / 9:00 PM - Finish</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$816.44</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 - connor -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title"> Connor Talkshow </h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">12 Dec 2077</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=1&sessionID=1" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">12 Dec 2077 / 8:30 PM - 10:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$20.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 - jimmy -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Jimmy On Tour</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">3 June 2023</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=2&sessionID=2" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">3 June 2023 / 7:30 PM - 9:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$25.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3 - markiplier -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Markiplier Show</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">6 Sept 2069</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=3&sessionID=3" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket - Day 1</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">6 Sept 2069 / 7:00 PM - 8:30 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$69.69</h5>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">7 Sept 2069</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=3&sessionID=4" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket - Day 2</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">7 Sept 2069 / 7:00 PM - 8:30 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$69.69</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 4 - mole -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">RRQ VS GPX</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">5 July 2028</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=4&sessionID=5" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">MDL Day 1 Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">5 July 2028 / 8:00 PM - 12:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$5.00</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">7 July 2028</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=4&sessionID=6" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">MDL Day 2 Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">7 July 2028 / 8:00 PM - 12:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$5.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 - nba -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Warriors VS Lakers</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">10 Oct 2024</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=5&sessionID=7" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">9 Oct 2024 / 4:00 PM - 7:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$99.99</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 - radit -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">SUCRD</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">11 Sept 2025</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=6&sessionID=8" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">11 Sept 2025 / 7:30 PM - 9:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$15.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 - rick -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Rick Concert</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">24 Dec 2030</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=7&sessionID=9" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket - Day 1</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">24 Dec 2030 / 8:00 PM - 9:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$25.00</h5>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">25 Dec 2030</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=7&sessionID=10" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket - Day 2</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">25 Dec 2030 / 8:00 PM - 9:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$25.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 - valo -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Twitch Rivals: Valorant</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">16 Feb 2023</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=8&sessionID=11" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Twitch Rivals Day 1 Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">16 Feb 2023 / 1:00 PM - Finish</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$129.00</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">17 Feb 2023</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=8&sessionID=12" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Twitch Rivals Day 2 Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">17 Feb 2023 / 1:00 PM - Finish</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$129.00</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">18 Feb 2023</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=8&sessionID=13" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Twitch Rivals Day 3 Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">18 Feb 2023 / 1:00 PM - Finish</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$129.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 - wwe -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">The Rock VS John Cena</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">21 Jan 2099</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=9&sessionID=14" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">21 Jan 2099 / 8:00 PM - 10:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$129.99</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 - yoasobi -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Winter Music Festival</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">16 Dec 2023</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=10&sessionID=15" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">Entry Ticket</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">16 Dec 2023 / 7:30 PM - 9:00 PM</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$30.00</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 - sao -->
+            <div class="displayBlock">
+                <!-- event name -->
+                <div class="container tickets-title-div">
+                    <h4 class="info-title-text event-title">Sword Art Online Progressive</h4>
+                </div>
+                <!-- tickets -->
+                <div class="container tickets-batch">
+                    <div class="container-fluid">
+                        <h3 class="info-subheading-text">---</h3>
+                    </div>
+                    <div class="list-group">
+                        <a href="/checkout?eventID=11&sessionID=16" class="list-group-item list-group-item-action flex-column align-items-start border individual-tickets">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="info-subheading-text">---</h5>
+                            </div>
+                            <i data-feather="calendar" style="color: dimgrey"></i> <span class="info-sub-text">---</span>
+                                <hr class="divider-main">
+                                <h5 class="info-sidebar-title">$---</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- feathericons -->
+            <script>
+            feather.replace()
+            </script>
+            <script type="text/javascript" src="/js/buy-page.js"></script>
+    </body>
+</html>
